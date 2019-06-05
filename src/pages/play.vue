@@ -23,7 +23,7 @@
                   <li> 
                         <img src="./../assets/icon1-play.png" alt="">  
                         <h5>{{ $t('intro.regist') }}</h5>
-                        <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
+                        
                         <span>
                               <a href="javascript:void(0);">
                                     {{ $t('intro.learnmore') }}
@@ -37,7 +37,7 @@
                   <li> 
                         <img src="./../assets/icon2-play.png" alt="">  
                         <h5>{{ $t('intro.disclaimer') }}</h5>
-                        <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
+                        
                         <span>
                               <a href="javascript:void(0);">
                                     {{ $t('intro.learnmore') }}
@@ -50,9 +50,9 @@
                   <li> 
                         <img src="./../assets/icon3-play.png" alt="">  
                         <h5>{{ $t('intro.competition') }}</h5>
-                        <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
+                        
                         <span>
-                              <span @click="downLoadPdf" class="down">
+                              <span @click.self="downLoadPdf" class="down">
                                     {{ $t('intro.learnmore') }}
                               </span>
                               <i>
@@ -104,7 +104,7 @@ export default {
                   body.appendChild(script);
             },
             downLoadPdf() {
-                  axios.get(`http://localhost:8080/${this.$i18n.locale}.pdf`,{
+                  axios.get(`${this.$i18n.locale}.pdf`,{
                         responseType: 'blob', //重要
                   }).then(response => {
                         const url = window.URL.createObjectURL(new Blob([response.data]));      
