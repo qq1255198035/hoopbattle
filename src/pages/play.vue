@@ -104,17 +104,18 @@ export default {
                   body.appendChild(script);
             },
             downLoadPdf() {
+                  const link = document.createElement('a');
+                  document.querySelector(".dv5").innerHTML = '';
                   axios.get(`${this.$i18n.locale}.pdf`,{
                         responseType: 'blob', //重要
                   }).then(response => {
                         const url = window.URL.createObjectURL(new Blob([response.data]));      
-                        const link = document.createElement('a');
-                        //console.log(url)
                         let fname = 'rules.pdf';
                         link.href = url;
                         link.setAttribute('download', fname);
                         document.querySelector(".dv5").appendChild(link);
                         link.click();
+                        window.URL.revokeObjectURL(url);
                   })
             }
     },

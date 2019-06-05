@@ -2,8 +2,9 @@
       <div id="top-bar">
             <div class="icons">
                   <span class="margin5"> 
-                        <i class="margin5"><font-awesome-icon icon="envelope-open" /></i>
-                        xuanxiu@hoopbattle.com
+                        <!-- <i class="margin5"><font-awesome-icon icon="envelope-open" /></i> -->
+                        <i class="margin5"><font-awesome-icon icon="phone" flip="horizontal"/></i>
+                        010-53513817
                   </span> / 
                   <i class="margin5">
                         <font-awesome-icon :icon="['fab', 'facebook-f']" /> 
