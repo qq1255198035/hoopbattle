@@ -8,6 +8,9 @@ export default {
   },
   more: "MORE",
   intro: {
+    title: "INTRODUCTION",
+    register: "Register",
+    learnmore: "LEARN MORE",
     desc1:
       "Hoop Battle 3x3 Championship is a FIBA endorsed international basketball competition. The aim of Hoop Battle is to bring in the best talent from all over the world to compete at the highest level.",
     desc2:
@@ -24,13 +27,22 @@ export default {
     newyork: "New York",
     tokyo: "Tokyo",
     toronto: "Toronto",
-    vancouver: "vancouver"
+    vancouver: "New City"
+  },
+  media: {
+    city: {
+      hongkong: "MEDIA - HONG KONG",
+      newyork: "MEDIA - NEW YORK",
+      tokyo: "MEDIA - TOKYO",
+      toronto: "MEDIA - TORONTO",
+      vancouver: "MEDIA - New City"
+    }
   },
   contact: {
     contactus: "CONTACTSUS",
-        hotline: "Hotline",
-        email: "Email",
-        location: "Location"
+    hotline: "Hotline",
+    email: "Email",
+    location: "Location"
   },
-      copyright: "Copyright © 2019 Hoop Battle, All RIGHTS Reserved"
+  copyright: "Copyright © 2019 Hoop Battle, All RIGHTS Reserved"
 };

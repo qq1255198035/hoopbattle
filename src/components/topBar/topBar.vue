@@ -3,7 +3,7 @@
             <div class="icons">
                   <span class="margin5"> 
                         <i class="margin5"><font-awesome-icon icon="envelope-open" /></i>
-                        hoopbattle@gbigslam.com
+                        xuanxiu@hoopbattle.com
                   </span> / 
                   <i class="margin5">
                         <font-awesome-icon :icon="['fab', 'facebook-f']" /> 
@@ -36,6 +36,7 @@ export default {
                   localStorage.lang = 'zh_TW';
                   localStorage.langShow = "繁體";
                   this.lang = localStorage.langShow;
+                  document.querySelector('html').setAttribute('lang','zh-CN')
             },
             setLangEN(){
                   this.lang = "EN";
@@ -44,10 +45,22 @@ export default {
                   localStorage.langShow = "EN";
                   this.lang = localStorage.langShow;
                   this.hideMenu = false
+                  document.querySelector('html').setAttribute('lang','en')
             }
       },
       mounted(){
             this.lang = localStorage.langShow ? localStorage.langShow : 'EN';
+            document.querySelector('html').setAttribute('lang',this.toLang)
+      },
+      computed:{
+            // eslint-disable-next-line
+            toLang(){
+                  switch(this.lang){
+                        case '' : return 'en';
+                        case 'EN' : return 'en';
+                        case '繁體' : return 'zh-CN'
+                  }
+            }
       }
 }
 </script>

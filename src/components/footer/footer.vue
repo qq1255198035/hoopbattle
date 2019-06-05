@@ -11,7 +11,7 @@ export default {
 <style lang="less" scoped>
 #footer{
       width: 100%;
-      background-color: #000;
+      background-color: #181818;
       height: 105px;
       display: flex;
       align-items: center;

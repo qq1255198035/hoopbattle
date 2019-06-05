@@ -1,4 +1,5 @@
 const path = require("path");   
+
 function resolve(dir) {
       return path.join(__dirname, dir)
 }
@@ -13,5 +14,12 @@ module.exports = {
       .set("@views", resolve("src/views"))
       .set("@layout", resolve("src/layout"))
       .set("@static", resolve("src/static"));
-  }
+  },
+      configureWebpack: config => {
+                  config.externals = {
+                    "vue": "Vue",
+                    "vue-router": "VueRouter"
+                  };
+            
+      }
 };

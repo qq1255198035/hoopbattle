@@ -1,7 +1,7 @@
 <template>
       <div id="newyork">
             <section class="dv">
-                  <h1>MEDIA - NEW YORK</h1>
+                  <h1>{{ $t('media.city.newyork') }}</h1>
             </section>
             
       </div>

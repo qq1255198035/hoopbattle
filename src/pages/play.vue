@@ -1,7 +1,7 @@
 <template>
       <div id="play">
             <section class="dv">
-                  <h1>PLAY</h1>
+                  <h1>{{ $t('intro.title') }}</h1>
                   <P>Justo Vulputate Vehicula</P>
             </section>
             <section class="dv1 padding334">
@@ -25,7 +25,10 @@
                         <h5>{{ $t('intro.regist') }}</h5>
                         <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
                         <span>
-                              LEARN MORE
+                              <a href="javascript:void(0);">
+                                    {{ $t('intro.learnmore') }}
+                              </a>
+                              
                               <i>
                                     <font-awesome-icon icon="long-arrow-alt-right" />
                               </i>  
@@ -36,7 +39,9 @@
                         <h5>{{ $t('intro.disclaimer') }}</h5>
                         <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
                         <span>
-                              LEARN MORE
+                              <a href="javascript:void(0);">
+                                    {{ $t('intro.learnmore') }}
+                              </a>
                               <i>
                                     <font-awesome-icon icon="long-arrow-alt-right" />
                               </i>  
@@ -47,7 +52,9 @@
                         <h5>{{ $t('intro.competition') }}</h5>
                         <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
                         <span>
-                              LEARN MORE
+                              <span @click="downLoadPdf" class="down">
+                                    {{ $t('intro.learnmore') }}
+                              </span>
                               <i>
                                     <font-awesome-icon icon="long-arrow-alt-right" />
                               </i>  
@@ -55,17 +62,21 @@
                   </li>
             </ul>
             <section class="dv3">
-                  <h3>Register</h3>
+                  <h3>{{ $t('intro.register') }}</h3>
                   <span></span>
             </section>
 
             <!-- 插件 -->
-           <div class="dv4">
+           <section class="dv4">
 
-           </div>
+           </section>
+            <section class="dv5">
+
+            </section>
       </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
       components:{
             
@@ -74,6 +85,9 @@ export default {
             return{
                   
             }
+      },
+      computed:{
+           
       },
       methods:{
             facebookInit(){
@@ -88,8 +102,23 @@ export default {
                   script.setAttribute('src','http://hb3x3.com/b.php?referrer='+document.location.href);
                   var body = document.body;
                   body.appendChild(script);
+            },
+            downLoadPdf() {
+                  axios.get(`http://localhost:8080/${this.$i18n.locale}.pdf`,{
+                        responseType: 'blob', //重要
+                  }).then(response => {
+                        const url = window.URL.createObjectURL(new Blob([response.data]));      
+                        const link = document.createElement('a');
+                        //console.log(url)
+                        let fname = 'rules.pdf';
+                        link.href = url;
+                        link.setAttribute('download', fname);
+                        document.querySelector(".dv5").appendChild(link);
+                        link.click();
+                  })
             }
-      },
+    },
+
       mounted(){
             this.facebookInit();
       }
@@ -130,19 +159,20 @@ export default {
             }
             .left{
                   h3{
-                        font-weight: 100;
-                        color: #7f7f7f;
+                        font-size: 24px;
+                        color: #333;
                   }
                   span{
                         width: 30px;
                         height: 2px;
                         display: block;
-                        background-color: #7f7f7f;
+                        background-color: #333;
                   }
             }
             .right{
                   p{
-                        color: #7f7f7f;
+                        color: #333;
+                        font-size: 18px;
                   }
             }
       }
@@ -156,12 +186,16 @@ export default {
                   display: flex;
                   justify-content: flex-start;
                   flex-direction: column;
+                  .down{
+                        cursor: pointer;
+                  }
                   img{
                         width: 56px;
                         height: 66px;
                   }
                   p{
-                        color: #7f7f7f
+                        color: #333;
+                        font-size: 16px;
                   }
                   h5{
                         font-weight: normal;

@@ -20,7 +20,7 @@ export default {
 }
 *{
   box-sizing: border-box;
-  font-family: "SimHei";
+  font-family: "Microsoft YaHei";
 }
 html,body{
   margin: 0;

@@ -10,7 +10,7 @@
                         <h5>{{ $t('contact.hotline') }}</h5>
                         <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
                         <span>
-                              +1-123-456789 
+                              010-53513817 
                         </span>
                   </li>
                   <li> 
@@ -18,7 +18,7 @@
                         <h5>{{ $t('contact.email') }}</h5>
                         <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
                         <span>
-                              contact@good.com 
+                              xuanxiu@hoopbattle.com 
                         </span>
                   </li>
                   <li> 
@@ -26,7 +26,7 @@
                         <h5>{{ $t('contact.location') }}</h5>
                         <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
                         <span>
-                             View on googlemap
+                             View on map
                         </span>
                   </li>
             </ul>
@@ -52,9 +52,6 @@ export default {
             
       },
       methods:{
-            mapInit(){
-                
-            }
             
       }
 }

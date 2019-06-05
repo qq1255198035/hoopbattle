@@ -4,7 +4,7 @@ import BasicLayout from "./../layouts/BasicLayout.vue";
 Vue.use(Router)
 
 export default new Router({
-  mode: "history",
+  //mode: "history",
   scrollBehavior: () => ({ y: 0 }),
   routes: [
     {

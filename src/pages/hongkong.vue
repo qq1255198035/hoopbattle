@@ -1,10 +1,16 @@
 <template>
       <div id="hongkong">
             <section class="dv">
-                  <h1>MEDIA - HONG KONG</h1>
+                  <h1>{{ $t('media.city.hongkong') }}</h1>
             </section>
             <section class="dv1">
-                  <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F329508777719179%2Fvideos%2F479982319412755%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                  <h2>VIDEOS</h2>
+                  <span class="split-line"></span>
+                  <div class="video-box">
+                        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F329508777719179%2Fvideos%2F479982319412755%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F329508777719179%2Fvideos%2F479982319412755%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                        
+                  </div>
             </section>
             <div class="dv4">
 
@@ -54,14 +60,31 @@ export default {
             }
       }
       .dv1{
+            width: 100%;
+            background-color: #f3f3f3;
             padding: 50px 334px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            iframe{
-                  width: 560px;
-                  height: 315px;
+            h2{
+                  margin: 20px 0;
             }
+            .split-line{
+                  width: 30px;
+                  display: block;
+                  height: 2px;
+                  background-color: #000;
+            }
+            .video-box{
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin: 20px 0;
+                  iframe{
+                        width: 560px;
+                        height: 315px;
+                        margin: 10px 0;
+                  }
+            }
+            
       }
       .dv4{
             padding: 50px 334px;
@@ -78,6 +101,9 @@ export default {
             }
             .dv1{
                   padding: 10px 30px;
+                  h2{
+                        font-size: 16px;
+                  }
                   iframe{
                         width: 100%;
                         

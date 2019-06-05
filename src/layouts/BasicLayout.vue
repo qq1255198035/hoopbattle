@@ -15,6 +15,10 @@ export default {
             topBar,
             myheader,
             myfooter
+      },
+      mounted(){
+            
+            
       }
 }
 </script>
