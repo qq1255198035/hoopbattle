@@ -8,7 +8,7 @@
                   <li> 
                         <i><font-awesome-icon icon="phone" flip="horizontal"/></i>  
                         <h5>{{ $t('contact.hotline') }}</h5>
-                        <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
+                        
                         <span>
                               010-53513817 
                         </span>
@@ -16,7 +16,7 @@
                   <li> 
                         <i><font-awesome-icon :icon="['far', 'envelope']" /></i> 
                         <h5>{{ $t('contact.email') }}</h5>
-                        <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
+                        
                         <span>
                               xuanxiu@hoopbattle.com 
                         </span>
@@ -24,7 +24,7 @@
                   <li> 
                         <i><font-awesome-icon icon="paper-plane"/></i>  
                         <h5>{{ $t('contact.location') }}</h5>
-                        <p>Far far away,behind the word mountains,far from the countries Vakalia Consonantia,there live the blind texts. Separated they live.</p>
+                        
                         <span>
                              View on map
                         </span>
