@@ -9,13 +9,13 @@ export default {
   more: "更多",
   intro: {
     title: "簡介",
-    register: "立即註冊",
+    register: "立即報名",
     learnmore: "了解更多",
     desc1:
       "Hoop Battle 3x3 Championship是FIBA認可的國際籃球比賽。 Hoop Battle的目標是吸引來自世界各地的最優秀人才參加最高級別的比賽",
     desc2:
       "今年，Hoop Battle將在全球五個城市舉辦海外錦標賽，每個城市的獲勝團隊將在冠軍賽中在中國參賽，獲得人民幣40萬元的大獎",
-    regist: "註冊說明",
+    regist: "報名須知",
     disclaimer: "免責聲明",
     competition: "比赛規則"
   },

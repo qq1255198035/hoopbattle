@@ -3,7 +3,8 @@
             <swiper :imgUrl="imgURL"></swiper>
             <div class="section">
                   <p></p>
-                  <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnba%2Fvideos%2F2712587355443005%2F&show_text=0&width=476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                  <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnba%2Fvideos%2F2712587355443005%2F&show_text=0&width=476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
+                  <iframe src="https://www.youtube.com/embed/6jmAnPNtH2U?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="section1">
                   <div class="img-box">
@@ -220,7 +221,7 @@ html[lang=en]{
                         height: 100%;
                         padding-top: 140px;
                         background-position: top center;
-                        background-size: 100% auto;
+                        background-size: 100% 100%;
                         background-repeat: no-repeat;
                         &:hover{
                                     transform: scale(1.1);

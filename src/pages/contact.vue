@@ -2,32 +2,35 @@
       <div id="contact">
             <section class="dv">
                   <h1>{{ $t('contact.contactus') }}</h1>
-                  <P>Get Intouch</P>
+                  
             </section>
             <ul class="dv2 padding334">
                   <li> 
                         <i><font-awesome-icon icon="phone" flip="horizontal"/></i>  
-                        <h5>{{ $t('contact.hotline') }}</h5>
-                        
-                        <span>
-                              010-53513817 
-                        </span>
+                        <div class="text">
+                              <h5>{{ $t('contact.hotline') }}</h5>
+                              <span>
+                                    010-53513817 
+                              </span>
+                        </div>
                   </li>
                   <li> 
                         <i><font-awesome-icon :icon="['far', 'envelope']" /></i> 
-                        <h5>{{ $t('contact.email') }}</h5>
-                        
-                        <span>
-                              xuanxiu@hoopbattle.com 
-                        </span>
+                        <div class="text">
+                              <h5>{{ $t('contact.email') }}</h5>
+                              <span>
+                                    xuanxiu@hoopbattle.com 
+                              </span>
+                        </div>
                   </li>
                   <li> 
                         <i><font-awesome-icon icon="paper-plane"/></i>  
-                        <h5>{{ $t('contact.location') }}</h5>
-                        
-                        <span>
-                             View on map
-                        </span>
+                        <div class="text">
+                              <h5>{{ $t('contact.location') }}</h5>
+                              <span>
+                                    View on map
+                              </span>
+                        </div>
                   </li>
             </ul>
             <section id="map">
@@ -91,21 +94,26 @@ export default {
             display: flex;
             width: 100%;
             justify-content: space-between;
+            padding: 150px 334px;
             li{
                   width: 30%;
                   display: flex;
                   justify-content: flex-start;
-                  flex-direction: column;
+                  .text{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 10%;
+                        justify-content: space-between;
+                        h5{
+                              font-weight: normal;
+                              font-size: 25px;
+                              margin: 0;
+                        }
+                  }
                   i{
-                        font-size: 40px;
+                        font-size: 50px;
                   }
-                  p{
-                        color: #7f7f7f
-                  }
-                  h5{
-                        font-weight: normal;
-                        font-size: 20px;
-                  }
+                  
             }
       }
       .dv3{
@@ -135,22 +143,18 @@ export default {
                   li{
                         width: 100%;
                         margin: 10px 0;
-                        img{
-                              width: 36px;
-                              height: 40px;
+                         i{
+                              font-size: 30px;
                         }
-                        h5{
+                        .text{
+                              h5{
                               font-size: 14px;
                               margin: 5px 0;
-                        }
-                        p{
-                              font-size: 12px;
-                              margin: 5px 0;
-                        }
-                        span{
-                              font-size: 14px;
-                        }
-                        
+                              }
+                              span{
+                                    font-size: 14px;
+                              }
+                        }    
                   }
             }
       }

@@ -15,7 +15,7 @@ export default {
       "Hoop Battle 3x3 Championship is a FIBA endorsed international basketball competition. The aim of Hoop Battle is to bring in the best talent from all over the world to compete at the highest level.",
     desc2:
       "This year, Hoop Battle will host overseas tournaments in five cities globally, and the winning team from each city will compete in China at the Championship Round for a grand prize of RMB400,000!",
-    regist: "Registration",
+    regist: "Registration requirements",
     disclaimer: "Disclaimer",
     competition: "Competition Rules"
   },
@@ -39,7 +39,7 @@ export default {
     }
   },
   contact: {
-    contactus: "CONTACTSUS",
+    contactus: "CONTACTUS",
     hotline: "Hotline",
     email: "Email",
     location: "Location"

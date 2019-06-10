@@ -2,7 +2,7 @@
       <div id="scores">
             <section class="dv">
                   <h1>{{ $t('scores.schedules') }}</h1>
-                  <P>Justo Vulputate Vehicula</P>
+                  
             </section>
             <section class="dv1">
 
@@ -18,9 +18,7 @@ export default {
                   elem.setAttribute("data-fiba-embedtype","results");
                   elem.setAttribute("data-fiba-eventid","64f1cb2f-f4ae-4490-bb24-9e21d71e0188");
                   elem.async = true;
-                  document.querySelector('.dv1').appendChild(elem);
-
-                  
+                  document.querySelector('.dv1').appendChild(elem);    
             }
       },
       mounted(){
