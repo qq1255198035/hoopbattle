@@ -1,6 +1,8 @@
 <template>
       <div id="footer">
             <p>{{ $t('copyright') }}</p>
+            <a href="https://www.westacks.com" target="_blank">{{ $t('powered') }}</a>
+            
       </div>
 </template>
 <script>
@@ -16,9 +18,15 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       p{
             color: #fff;
             text-align: center;
+      }
+      a{
+            color: #1d44a0;
+            text-align: center;
+            text-decoration: underline;
       }
 }
 @media screen and (max-width: 700px){

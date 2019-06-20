@@ -24,7 +24,7 @@ export default {
             color: #fff;
             background-image: url('./../assets/banner4.png');
             background-position: top center;
-            background-size: 100% auto;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             h1{
                   font-size: 60px;

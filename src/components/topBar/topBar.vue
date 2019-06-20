@@ -7,10 +7,14 @@
                         010-53513817
                   </span> / 
                   <i class="margin5">
-                        <font-awesome-icon :icon="['fab', 'facebook-f']" /> 
+				<a href="https://www.facebook.com/hoopbattle3x3" target="_blank">
+					<font-awesome-icon :icon="['fab', 'facebook-f']" /> 
+				</a>
                   </i>
                   <i class="margin5">
-                        <font-awesome-icon :icon="['fab', 'instagram']" /> 
+				<a href="https://www.instagram.com/hoopbattle_3x3" target="_blank">
+					<font-awesome-icon :icon="['fab', 'instagram']" /> 
+				</a>
                   </i>
             </div>
             <div class="lang" @click="hideMenu = !hideMenu">
@@ -79,6 +83,9 @@ export default {
       
       .margin5{
             margin: 0 10px;
+		a{
+			color: #fff;
+		}
             i{
                   font-size: 14px;
             }

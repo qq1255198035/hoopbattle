@@ -54,8 +54,7 @@ export default {
       .header{
             width: 100%;
             display: flex;
-            justify-content: space-between;
-            height: 127px;
+            justify-content: space-between;      
             align-items: center;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 0 100px;

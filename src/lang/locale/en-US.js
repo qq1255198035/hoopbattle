@@ -39,10 +39,11 @@ export default {
     }
   },
   contact: {
-    contactus: "CONTACTUS",
+    contactus: "CONTACT US",
     hotline: "Hotline",
     email: "Email",
     location: "Location"
   },
-  copyright: "Copyright © 2019 Hoop Battle, All RIGHTS Reserved"
+  copyright: "Copyright © 2019 Hoop Battle, All RIGHTS Reserved",
+  powered: "Powered By Westacks"
 };

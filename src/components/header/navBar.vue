@@ -95,7 +95,7 @@ export default {
 </script>
 <style lang="less" scoped>
 #nav-bar{
-      height: 127px;
+      height: 100px;
       display: flex;
       align-items: center;
       .nav-list-pc{
@@ -113,7 +113,7 @@ export default {
                         width: 240px;
                         padding: 0 10px;
                         position: absolute;
-                        top:127px;
+                        top:100px;
                         background-color: #fff;
                         left: 0;
                         li{

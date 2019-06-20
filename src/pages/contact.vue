@@ -19,7 +19,7 @@
                         <div class="text">
                               <h5>{{ $t('contact.email') }}</h5>
                               <span>
-                                    xuanxiu@hoopbattle.com 
+                                    3x3hoopbattle@gmail.com
                               </span>
                         </div>
                   </li>
@@ -63,7 +63,7 @@ export default {
 #contact{
       width: 100%;
       .padding334{
-            padding: 50px 334px;
+            padding: 50px 15%;
       }
       #map{
             width: 100%;
@@ -72,14 +72,14 @@ export default {
             width: 100%;
             height: 528px;
             display: flex;
-            padding: 0 334px;
+            padding: 0 15%;
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
             color: #fff;
             background-image: url('./../assets/banner3.png');
             background-position: top center;
-            background-size: 100% auto;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             h1{
                   font-size: 60px;
@@ -94,11 +94,11 @@ export default {
             display: flex;
             width: 100%;
             justify-content: space-between;
-            padding: 150px 334px;
+            padding: 150px 10%;
             li{
                   width: 30%;
                   display: flex;
-                  justify-content: flex-start;
+                  justify-content: center;
                   .text{
                         display: flex;
                         flex-direction: column;
@@ -111,7 +111,7 @@ export default {
                         }
                   }
                   i{
-                        font-size: 50px;
+                        font-size: 45px;
                   }
                   
             }

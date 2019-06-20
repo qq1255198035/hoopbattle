@@ -52,7 +52,7 @@ export default {
             color: #fff;
             background-image: url('./../assets/banner4.png');
             background-position: top center;
-            background-size: 100% auto;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             h1{
                   font-size: 60px;
@@ -62,7 +62,7 @@ export default {
       .dv1{
             width: 100%;
             background-color: #f3f3f3;
-            padding: 50px 334px;
+            padding: 50px 15%;
             h2{
                   margin: 20px 0;
             }
@@ -79,7 +79,7 @@ export default {
                   align-items: center;
                   margin: 20px 0;
                   iframe{
-                        width: 560px;
+                        width: 48%;
                         height: 315px;
                         margin: 10px 0;
                   }
@@ -87,7 +87,7 @@ export default {
             
       }
       .dv4{
-            padding: 50px 334px;
+            padding: 50px 15%;
       }
 }
 @media screen and(max-width: 700px){

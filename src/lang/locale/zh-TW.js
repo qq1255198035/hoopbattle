@@ -45,5 +45,6 @@ export default {
     location: "地址"
   },
 
-  copyright: "Copyright © 2019 籃戰 版權所有 翻印必究"
+  copyright: "Copyright © 2019 籃戰 版權所有 翻印必究",
+  powered: "由Westacks提供技术支持"
 };

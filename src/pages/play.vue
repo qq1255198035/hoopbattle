@@ -171,7 +171,7 @@ export default {
 #play{
       width: 100%;
       .padding334{
-            padding: 50px 334px;
+            padding: 50px 15%;
       }
       .dv{
             width: 100%;
@@ -183,7 +183,7 @@ export default {
             color: #fff;
             background-image: url('./../assets/banner2.png');
             background-position: top center;
-            background-size: 100% auto;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             h1{
                   font-size: 60px;
@@ -224,7 +224,7 @@ export default {
             display: flex;
             width: 100%;
             justify-content: space-between;
-            padding: 150px 334px;
+            padding: 150px 15%;
             li{
                   width: 30%;
                   display: flex;
@@ -240,6 +240,7 @@ export default {
                         }
                         
                         h5{
+                              height: 54px;
                               font-weight: normal;
                               font-size: 21px;
                               margin: 0;
@@ -260,13 +261,13 @@ export default {
             width: 100%;
             height: 348px;
             display: flex;
-            padding: 0 334px;
+            padding: 0 15%;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
             background-image: url('./../assets/img1-play.png');
             background-position: top center;
-            background-size: 100% auto;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             h3{
                         font-weight: normal;
@@ -281,7 +282,7 @@ export default {
             }
       }
       .dv4{
-            padding: 50px 334px;
+            padding: 50px 15%;
       }
 }
 @media screen and(max-width: 700px){
@@ -317,8 +318,9 @@ export default {
                         margin: 10px 0;
                         .text{
                               h5{
-                              font-size: 14px;
-                              margin: 5px 0;
+                                    font-size: 14px;
+                                    margin: 5px 0;
+                                    height: auto;
                               }
                               p{
                                     font-size: 12px;

@@ -33,14 +33,14 @@ export default {
             width: 100%;
             height: 528px;
             display: flex;
-            padding: 0 334px;
+            padding: 0 15%;
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
             color: #fff;
             background-image: url('./../assets/banner3.png');
             background-position: top center;
-            background-size: 100% auto;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             h1{
                   font-size: 60px;
@@ -51,7 +51,7 @@ export default {
             }
       }
       .dv1{
-            padding: 50px 334px;
+            padding: 50px 15%;
       }
 }
 @media screen and(max-width: 700px){
