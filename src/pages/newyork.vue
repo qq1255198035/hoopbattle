@@ -2,6 +2,7 @@
       <div id="newyork">
             <section class="dv">
                   <h1>{{ $t('media.city.newyork') }}</h1>
+                  <h3>{{ $t('commingsoon') }}</h3>
             </section>
             
       </div>
@@ -34,12 +35,16 @@ export default {
       
 }
 @media screen and(max-width: 700px){
-      #hongkong{
+      #newyork{
             .dv{
                   height: 109px;
+                  padding-top: 40px;
                   h1{
                         font-size: 14px;
                         margin: 0;
+                  }
+                  h3{
+                        font-size: 12px;
                   }
             }
       }

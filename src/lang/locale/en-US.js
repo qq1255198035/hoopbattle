@@ -1,14 +1,14 @@
 export default {
   nav: {
     home: "Home",
-    intro: "Introduction",
+    intro: "About",
     scores: "Schedule /Scores",
-    media: "Media",
+    media: "Cities",
     contact: "Contact Us"
   },
   more: "MORE",
   intro: {
-    title: "INTRODUCTION",
+    title: "About",
     register: "Register",
     learnmore: "LEARN MORE",
     desc1:
@@ -31,19 +31,20 @@ export default {
   },
   media: {
     city: {
-      hongkong: "MEDIA - HONG KONG",
-      newyork: "MEDIA - NEW YORK",
-      tokyo: "MEDIA - TOKYO",
-      toronto: "MEDIA - TORONTO",
-      vancouver: "MEDIA - New City"
+      hongkong: "CITY - HONG KONG",
+      newyork: "CITY - NEW YORK",
+      tokyo: "CITY - TOKYO",
+      toronto: "CITY - TORONTO",
+      vancouver: "CITY - New City"
     }
   },
   contact: {
-    contactus: "CONTACT US",
-    hotline: "Hotline",
-    email: "Email",
-    location: "Location"
+    contactus: "CONTACT US"
   },
   copyright: "Copyright © 2019 Hoop Battle, All RIGHTS Reserved",
-  powered: "Powered By Westacks"
+  powered: "Powered By Westacks",
+  registration: "Registration",
+  photo: "PHOTOS",
+  commingsoon: "Coming Soon",
+  video: "VIDEOS"
 };

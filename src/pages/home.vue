@@ -1,6 +1,9 @@
 <template>
       <div id="home">
-            <swiper :imgUrl="imgURL"></swiper>
+            
+            <div class="banner-box">
+                  <img src="./../assets/banner.jpg" alt="" srcset="">
+            </div>
             <div class="section">
                   <p></p>
                   <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnba%2Fvideos%2F2712587355443005%2F&show_text=0&width=476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
@@ -44,19 +47,15 @@
       </div>
 </template>
 <script>
-import swiper from '@/components/swiper/swiper'
-import banner1 from '@/assets/banner.jpg'
+
+
 export default {
       components:{
-            swiper
+            
       },
       data(){
             return{
-                  imgURL:[
-                        banner1,
-                        banner1,
-                        banner1
-                  ]
+                 
             }
       },
       mounted(){
@@ -179,6 +178,15 @@ html[lang=en]{
 }
 #home{
       width: 100%;
+      .banner-box{
+            width: 100%;
+            background-color: #000;
+            padding-top: 100px;
+            img{
+                  display: block;
+                  width: 100%;
+            }
+      }
       .section{
             width: 100%;
             padding: 60px 15%;
@@ -224,8 +232,8 @@ html[lang=en]{
                         background-size: 100% 100%;
                         background-repeat: no-repeat;
                         &:hover{
-                                    transform: scale(1.1);
-                                    transition: all 0.5s ease;     
+                              transform: scale(1.1);
+                              transition: all 0.5s ease;     
                         }
                   }
                   
@@ -254,6 +262,9 @@ html[lang=en]{
             }
       }
       #home{
+            .banner-box{
+                  padding-top: 40px;
+            }
             .section{
                   padding: 20px 30px;
                   p{

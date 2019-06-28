@@ -4,7 +4,7 @@
                   <h1>{{ $t('media.city.hongkong') }}</h1>
             </section>
             <section class="dv1">
-                  <h2>VIDEOS</h2>
+                  <h2>{{ $t('video') }}</h2>
                   <span class="split-line"></span>
                   <div class="video-box">
                         <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F329508777719179%2Fvideos%2F479982319412755%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
@@ -29,7 +29,7 @@ export default {
                   document.querySelector('.dv4').appendChild(elem);
 
                   var script  = document.createElement('script');
-                  script.setAttribute('src','http://hb3x3.com/b.php?referrer='+document.location.href);
+                  script.setAttribute('src','http://hb3x3.com/b.php?referrer='+encodeURIComponent(document.location.href));
                   var body = document.body;
                   body.appendChild(script);
             }
@@ -92,6 +92,7 @@ export default {
 }
 @media screen and(max-width: 700px){
       #hongkong{
+            
             .dv{
                   height: 109px;
                   h1{
@@ -104,9 +105,11 @@ export default {
                   h2{
                         font-size: 16px;
                   }
-                  iframe{
-                        width: 100%;
-                        
+                  .video-box{
+                        flex-direction: column;
+                        iframe{
+                              width: 100%;
+                        }
                   }
             }
             .dv4{

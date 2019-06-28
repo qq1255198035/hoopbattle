@@ -4,35 +4,38 @@
                   <h1>{{ $t('contact.contactus') }}</h1>
                   
             </section>
-            <ul class="dv2 padding334">
-                  <li> 
-                        <i><font-awesome-icon icon="phone" flip="horizontal"/></i>  
-                        <div class="text">
-                              <h5>{{ $t('contact.hotline') }}</h5>
-                              <span>
-                                    010-53513817 
-                              </span>
-                        </div>
-                  </li>
-                  <li> 
-                        <i><font-awesome-icon :icon="['far', 'envelope']" /></i> 
-                        <div class="text">
-                              <h5>{{ $t('contact.email') }}</h5>
-                              <span>
-                                    3x3hoopbattle@gmail.com
-                              </span>
-                        </div>
-                  </li>
-                  <li> 
-                        <i><font-awesome-icon icon="paper-plane"/></i>  
-                        <div class="text">
-                              <h5>{{ $t('contact.location') }}</h5>
-                              <span>
-                                    View on map
-                              </span>
-                        </div>
-                  </li>
-            </ul>
+
+            <section class="dv2 padding334">
+                  <h2>General Enquiries: <span>hbc3on3@gmail.com</span></h2>
+                  <ul>
+                        <li>
+                              <div class="content">
+                                    <h3>{{ $t('city.hongkong') }}</h3>
+                                    <p><i><font-awesome-icon icon="phone" flip="horizontal"/></i>+(852)2777 0807</p>
+                                    <p><i><font-awesome-icon :icon="['far', 'envelope']" /></i>helen@hillensports.com</p>
+                              </div>
+                        </li>
+                        <li>
+                              <div class="content">
+                                    <h3>{{ $t('city.toronto') }}</h3>
+                                    <p><i><font-awesome-icon icon="phone" flip="horizontal"/></i>+1(647)297-6876</p>
+                                    <p><i><font-awesome-icon :icon="['far', 'envelope']" /></i>hoopbattletoronto@gmail.com</p>
+                              </div>
+                        </li>
+                        <li>
+                              <div class="content">
+                                    <h3>{{ $t('city.tokyo') }}</h3>
+                                    <p>{{ $t('commingsoon') }}</p>
+                              </div>
+                        </li>
+                        <li>
+                              <div class="content">
+                                    <h3>{{ $t('city.newyork') }}</h3>
+                                    <p>{{ $t('commingsoon') }}</p>
+                              </div>
+                        </li>
+                  </ul>
+            </section>
             <section id="map">
                   <mapbox mapWidth="100%" mapHeight="300px"></mapbox>
             </section>
@@ -91,30 +94,44 @@ export default {
       }
       .dv2{
             background-color: #fff;
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            padding: 150px 10%;
-            li{
-                  width: 30%;
-                  display: flex;
-                  justify-content: center;
-                  .text{
-                        display: flex;
-                        flex-direction: column;
-                        margin-left: 10%;
-                        justify-content: space-between;
-                        h5{
-                              font-weight: normal;
-                              font-size: 25px;
-                              margin: 0;
-                        }
+            h2{
+                  text-align: center;
+                  span{
+                        font-weight: normal;
                   }
-                  i{
-                        font-size: 45px;
-                  }
-                  
             }
+            > ul{
+                  display: flex;
+                  width: 100%;
+                  margin-top: 50px;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  
+                  li{
+                        width: 50%; 
+                        display: flex;
+                        justify-content: center;
+                        margin: 15px 0;
+                        .content{
+                              width: 60%;
+                              h3{
+                                    font-weight: normal;
+                                    font-size: 20px;
+                                    margin: 0;
+                              }
+                              p{
+                                    color: #333;
+                                    width: 100%;
+                                    i{
+                                          font-size: 15px;
+                                          margin-right: 4%;
+                                    }
+                              }
+                        }
+                        
+                  }
+            }
+            
       }
       .dv3{
             width: 100%;
@@ -140,22 +157,48 @@ export default {
             .dv2{
                   padding: 10px 30px;
                   flex-direction: column;
-                  li{
-                        width: 100%;
-                        margin: 10px 0;
-                         i{
-                              font-size: 30px;
+                  h2{
+                        font-size: 16px;
+                        span{
+                              font-weight: normal;
                         }
-                        .text{
-                              h5{
-                              font-size: 14px;
-                              margin: 5px 0;
-                              }
-                              span{
-                                    font-size: 14px;
-                              }
-                        }    
                   }
+                  > ul{
+                        width: 100%;
+                        margin-top: 10px;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        li{
+                              width: 100%;
+                              margin: 10px 0;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                              .content{
+                                    width: 100%;
+                                    h3{
+                                          width:100%;
+                                          font-size: 14px;
+                                          font-weight: bold;
+                                          text-align: center;
+                                          margin-bottom: 10px;
+                                    }
+                                    p{
+                                          font-size: 14px;
+                                          margin: 2px 0;
+                                          text-align: center;
+                                          width: 100%;
+                                          i{
+                                                font-size: 10px;
+                                          }
+                                    }
+                              }
+                              
+                              
+                        }
+                  }
+                  
             }
       }
 }

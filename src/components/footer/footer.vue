@@ -31,7 +31,7 @@ export default {
 }
 @media screen and (max-width: 700px){
       #footer{
-            height: 40px;
+            
             p{
                   font-size: 12px;
             }

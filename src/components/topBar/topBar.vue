@@ -1,18 +1,16 @@
 <template>
       <div id="top-bar">
             <div class="icons">
-                  <span class="margin5"> 
-                        <!-- <i class="margin5"><font-awesome-icon icon="envelope-open" /></i> -->
-                        <i class="margin5"><font-awesome-icon icon="phone" flip="horizontal"/></i>
-                        010-53513817
-                  </span> / 
+                  
+                        <!-- <i class="margin5"><font-awesome-icon icon="phone" flip="horizontal"/></i> -->
+                      
                   <i class="margin5">
 				<a href="https://www.facebook.com/hoopbattle3x3" target="_blank">
 					<font-awesome-icon :icon="['fab', 'facebook-f']" /> 
 				</a>
                   </i>
                   <i class="margin5">
-				<a href="https://www.instagram.com/hoopbattle_3x3" target="_blank">
+				<a href="https://www.instagram.com/hbc3x3" target="_blank">
 					<font-awesome-icon :icon="['fab', 'instagram']" /> 
 				</a>
                   </i>

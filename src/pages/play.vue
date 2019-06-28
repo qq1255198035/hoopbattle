@@ -70,15 +70,18 @@
                         </div>      
                   </li>
             </ul>
+            <div class="section1">
+                  <div class="img-box">
+                        <h5>{{ $t('photo') }}</h5>
+                  </div>
+            </div>
             <section class="dv3">
-                  <h3>{{ $t('intro.register') }}</h3>
-                  <span></span>
+                  <img class="image" v-for="(image, i) in imgUrl" :src="image" :key="i" @click="index = i">
+                  <vue-gallery-slideshow :images="imgUrl" :index="index" @close="index = null"></vue-gallery-slideshow>
             </section>
 
             <!-- 插件 -->
-           <section class="dv4">
-
-           </section>
+          
             <section class="dv5">
 
             </section>
@@ -86,32 +89,43 @@
       </div>
 </template>
 <script>
-import axios from 'axios'
+import axios from 'axios';
+
+import VueGallerySlideshow from 'vue-gallery-slideshow';
+import img01 from '@/assets/img01.jpg'
+import img02 from '@/assets/img02.jpg'
+import img03 from '@/assets/img03.jpg'
+import img04 from '@/assets/img04.jpg'
+import img05 from '@/assets/img05.jpg'
+import img06 from '@/assets/img06.jpg'
+import img07 from '@/assets/img07.jpg'
+import img08 from '@/assets/img08.jpg'
+import img09 from '@/assets/img09.jpg'
 export default {
-      components:{
-            
+      components: {
+            VueGallerySlideshow
       },
       data(){
             return{
-                  
+                  imgUrl:[
+                        img01,
+                        img02,
+                        img03,
+                        img04,
+                        img05,
+                        img06,
+                        img07,
+                        img08,
+                        img09
+                  ],
+                  index:null
             }
       },
       computed:{
            
       },
       methods:{
-            facebookInit(){
-                  var elem = document.createElement("script");
-                  elem.src = 'https://play.fiba3x3.com/embed.js';
-                  elem.setAttribute("data-fiba-embedtype","registration");
-                  elem.setAttribute("data-fiba-eventid","64f1cb2f-f4ae-4490-bb24-9e21d71e0188");
-                  elem.async = true;
-                  document.querySelector('.dv4').appendChild(elem);
-                  var script  = document.createElement('script');
-                  script.setAttribute('src','http://hb3x3.com/b.php?referrer='+document.location.href);
-                  var body = document.body;
-                  body.appendChild(script);
-            },
+            
             downLoadPdf_1() {
                   let purl = '3' + this.$i18n.locale + '.pdf';
                   document.querySelector(".dv5").innerHTML = '';
@@ -160,16 +174,39 @@ export default {
                         window.URL.revokeObjectURL(url);
                   })
             },
+            initSwiper(){
+                 
+            }
     },
 
       mounted(){
-            this.facebookInit();
+            
       }
 }
 </script>
 <style lang="less" scoped>
+
 #play{
       width: 100%;
+      .section1{
+            display: flex;
+            justify-content: center;
+            .img-box{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 380px;
+                  height: 271px;
+                  background-image: url('./../assets/bg01.png');
+                  background-position: top center;
+                  background-size: 100% 100%;
+                  background-repeat: no-repeat;
+                  h5{
+                        font-size: 25px;
+                  }
+            }
+            
+      }
       .padding334{
             padding: 50px 15%;
       }
@@ -224,7 +261,7 @@ export default {
             display: flex;
             width: 100%;
             justify-content: space-between;
-            padding: 150px 15%;
+            padding: 150px 15% 50px;
             li{
                   width: 30%;
                   display: flex;
@@ -259,27 +296,15 @@ export default {
       }
       .dv3{
             width: 100%;
-            height: 348px;
+            overflow: hidden;
             display: flex;
-            padding: 0 15%;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            background-image: url('./../assets/img1-play.png');
-            background-position: top center;
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            h3{
-                        font-weight: normal;
-                        color: #fff;
-                        font-size: 36px;
-                  }
-            span{
-                  width: 30px;
-                  height: 2px;
-                  display: block;
-                  background-color: #fff;
+            img{
+                  width: calc(100% /6);
+                  width: -webkit-calc(100% /6);
+                  height: 100%;
+                  
             }
+           
       }
       .dv4{
             padding: 50px 15%;
@@ -316,6 +341,7 @@ export default {
                   li{
                         width: 100%;
                         margin: 10px 0;
+                        padding-left: 10%;
                         .text{
                               h5{
                                     font-size: 14px;
@@ -334,14 +360,22 @@ export default {
                   }
             }
             .dv3{
-                  padding: 0 30px;
-                  height: 68px;
-                  h3{
-                        font-size: 14px;
+                 flex-direction: column;
+                 overflow: auto;
+                  
+                  img{
+                        width: 100%;
+                        
                   }
             }
             .dv4{
                   padding: 10px 30px;
+            }
+            .section1{
+                  .img-box{
+                        width: 280px !important;
+                        height: 171px !important;
+                  }
             }
       }
 }

@@ -105,10 +105,37 @@ export default {
                   height: 100%;
                   padding: 0 30px;
                   display: flex;
+                  
                   flex-direction: column;
                   justify-content: center;
                   align-items: center;
                   position: relative;
+                  &:hover::before{
+                        background-color: #1d44a0;
+                        -webkit-transform: scaleY(1);
+                        transform: scaleY(1);
+                        
+                  }      
+                  &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        bottom: 0;
+                        left: 0;
+                        
+                        z-index: 0;
+                        -webkit-transform: scaleY(0);
+                        transform: scaleY(0);
+                        -webkit-transform-origin: 0 50%;
+                        transform-origin: 0 50%;
+                        -webkit-transition-property: transform;
+                        transition-property: transform;
+                        -webkit-transition-duration: 0.4s;
+                        transition-duration: 0.4s;
+                       
+                        transition-timing-function: ease-out;
+                  }
                   .hidden-menu{
                         width: 240px;
                         padding: 0 10px;
@@ -116,9 +143,11 @@ export default {
                         top:100px;
                         background-color: #fff;
                         left: 0;
+                       
                         li{
                               display: flex;
                               padding: 6px;
+                              
                               a{
                                     width: 100%;
                                     color: #333;
@@ -134,11 +163,11 @@ export default {
                         color: #fff;
                         padding: 10px 0;
                         font-size: 18px;
-                        &:hover{
-                              transform: rotateX(360deg);
-                              transition: all 0.6s;
-                        }
+                        position: relative;
+                        z-index: 1;
+                        
                   }
+                  
                   .active-border{
                         width: 15px;
                         height: 2px;

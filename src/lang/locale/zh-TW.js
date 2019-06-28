@@ -1,14 +1,14 @@
 export default {
   nav: {
     home: "首頁",
-    intro: "簡介",
+    intro: "关于",
     scores: "時間表/比分",
-    media: "媒體",
+    media: "城市",
     contact: "聯係我們"
   },
   more: "更多",
   intro: {
-    title: "簡介",
+    title: "关于",
     register: "立即報名",
     learnmore: "了解更多",
     desc1:
@@ -31,20 +31,21 @@ export default {
   },
   media: {
     city: {
-      hongkong: "香港",
-      newyork: "紐約",
-      tokyo: "東京",
-      toronto: "多倫多",
-      vancouver: "新城"
+      hongkong: "城市 - 香港",
+      newyork: "城市 - 紐約",
+      tokyo: "城市 - 東京",
+      toronto: "城市 - 多倫多",
+      vancouver: "城市 - 新城"
     }
   },
   contact: {
-    contactus: "聯係我們",
-    hotline: "聯繫電話",
-    email: "電子郵箱",
-    location: "地址"
+    contactus: "聯係我們"
   },
 
   copyright: "Copyright © 2019 籃戰 版權所有 翻印必究",
-  powered: "由Westacks提供技术支持"
+  powered: "由Westacks提供技术支持",
+  registration: "報 名",
+  photo: "相 冊",
+  commingsoon: "即將開始",
+  video: "視 頻"
 };
