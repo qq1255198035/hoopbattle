@@ -20,7 +20,7 @@ export default {
       justify-content: center;
       flex-direction: column;
       p{
-            color: #fff;
+            color: rgba(89, 87, 87, 1);
             text-align: center;
       }
       a{

@@ -11,6 +11,8 @@ export default {
     title: "关于",
     register: "立即報名",
     learnmore: "了解更多",
+    discovermore: "發現更多",
+    registernow: "立即報名",
     desc1:
       "Hoop Battle 3x3 Championship是FIBA認可的國際籃球比賽。 Hoop Battle的目標是吸引來自世界各地的最優秀人才參加最高級別的比賽",
     desc2:
@@ -41,11 +43,12 @@ export default {
   contact: {
     contactus: "聯係我們"
   },
-
+  news: "新聞",
   copyright: "Copyright © 2019 籃戰 版權所有 翻印必究",
   powered: "由Westacks提供技术支持",
   registration: "報 名",
   photo: "相 冊",
   commingsoon: "即將開始",
-  video: "視 頻"
+  video: "視 頻",
+  torontorules: "多蘭多站比賽規則"
 };

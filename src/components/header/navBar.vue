@@ -111,7 +111,7 @@ export default {
                   align-items: center;
                   position: relative;
                   &:hover::before{
-                        background-color: #1d44a0;
+                        background-color: rgba(89,87,87,0.5);
                         -webkit-transform: scaleY(1);
                         transform: scaleY(1);
                         
@@ -133,7 +133,6 @@ export default {
                         transition-property: transform;
                         -webkit-transition-duration: 0.4s;
                         transition-duration: 0.4s;
-                       
                         transition-timing-function: ease-out;
                   }
                   .hidden-menu{
@@ -142,8 +141,7 @@ export default {
                         position: absolute;
                         top:100px;
                         background-color: #fff;
-                        left: 0;
-                       
+                        left: 0;   
                         li{
                               display: flex;
                               padding: 6px;
@@ -192,7 +190,7 @@ export default {
       }
 }
 .active{
-      background-color: #1d44a0;
+      background-color: rgba(89,87,87,0.5);
 }
 @media screen and(max-width: 700px){
       #nav-bar{

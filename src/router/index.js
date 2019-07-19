@@ -57,6 +57,11 @@ export default new Router({
           path: "/contact",
           name: "contact",
           component: () => import("@/pages/contact")
+        },
+        {
+          path: "/news",
+          name: "news",
+          component: () => import("@/pages/news")
         }
       ]
     }

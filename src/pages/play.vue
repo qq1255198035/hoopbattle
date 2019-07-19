@@ -76,6 +76,10 @@
                   </div>
             </div>
             <section class="dv3">
+                  <img class="image" v-for="(image, i) in imgurl1" :src="image" :key="i" @click="index1 = i">
+                  <vue-gallery-slideshow :images="imgurl1" :index="index1" @close="index1 = null"></vue-gallery-slideshow>
+            </section>
+            <section class="dv3">
                   <img class="image" v-for="(image, i) in imgUrl" :src="image" :key="i" @click="index = i">
                   <vue-gallery-slideshow :images="imgUrl" :index="index" @close="index = null"></vue-gallery-slideshow>
             </section>
@@ -90,7 +94,6 @@
 </template>
 <script>
 import axios from 'axios';
-
 import VueGallerySlideshow from 'vue-gallery-slideshow';
 import img01 from '@/assets/img01.jpg'
 import img02 from '@/assets/img02.jpg'
@@ -101,6 +104,18 @@ import img06 from '@/assets/img06.jpg'
 import img07 from '@/assets/img07.jpg'
 import img08 from '@/assets/img08.jpg'
 import img09 from '@/assets/img09.jpg'
+import img10 from '@/assets/img10.jpg'
+import img11 from '@/assets/img11.jpg'
+import img12 from '@/assets/img12.jpg'
+import img13 from '@/assets/img13.jpg'
+import img14 from '@/assets/img14.jpg'
+import img15 from '@/assets/img15.jpg'
+import img16 from '@/assets/hongkong-img01.jpg'
+import img17 from '@/assets/hongkong-img02.jpg'
+import img18 from '@/assets/hongkong-img03.jpg'
+import img19 from '@/assets/hongkong-img04.jpg'
+import img20 from '@/assets/hongkong-img05.jpg'
+import img21 from '@/assets/hongkong-img06.jpg'
 export default {
       components: {
             VueGallerySlideshow
@@ -108,6 +123,12 @@ export default {
       data(){
             return{
                   imgUrl:[
+				img10,
+				img11,
+				img12,
+				img13,
+				img14,
+				img15,
                         img01,
                         img02,
                         img03,
@@ -118,7 +139,16 @@ export default {
                         img08,
                         img09
                   ],
-                  index:null
+                  imgurl1:[
+                        img16,
+                        img17,
+                        img18,
+                        img19,
+                        img20,
+                        img21
+                  ],
+                  index:null,
+                  index1:null
             }
       },
       computed:{

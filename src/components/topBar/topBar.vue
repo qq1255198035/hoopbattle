@@ -18,7 +18,8 @@
             <div class="lang" @click="hideMenu = !hideMenu">
                   <span class="margin5 lang-show">{{ lang }} <font-awesome-icon icon="sort-down" /></span>
                   <ul v-show="hideMenu" class="side-menu">
-                        <li @click.stop="setLangTW">繁體</li>
+                        <!-- <li @click.stop="setLangTW">繁體</li> -->
+                        <li @click.stop="setLangCN">简体</li>
                         <li @click.stop="setLangEN">EN</li>
                   </ul>
             </div>
@@ -39,7 +40,17 @@ export default {
                   localStorage.lang = 'zh_TW';
                   localStorage.langShow = "繁體";
                   this.lang = localStorage.langShow;
-                  document.querySelector('html').setAttribute('lang','zh-CN')
+                  document.querySelector('html').setAttribute('lang','zh-TW');
+			window.location.reload();
+            },
+            setLangCN(){
+                  this.hideMenu = false
+                  this.$i18n.locale = 'zh_CN';
+                  localStorage.lang = 'zh_CN';
+                  localStorage.langShow = "简体";
+                  this.lang = localStorage.langShow;
+                  document.querySelector('html').setAttribute('lang','zh-CN');
+			window.location.reload();
             },
             setLangEN(){
                   this.lang = "EN";
@@ -47,8 +58,9 @@ export default {
                   localStorage.lang = 'en_US';
                   localStorage.langShow = "EN";
                   this.lang = localStorage.langShow;
-                  this.hideMenu = false
-                  document.querySelector('html').setAttribute('lang','en')
+                  this.hideMenu = false;
+                  document.querySelector('html').setAttribute('lang','en');
+			window.location.reload();
             }
       },
       mounted(){
@@ -61,7 +73,8 @@ export default {
                   switch(this.lang){
                         case '' : return 'en';
                         case 'EN' : return 'en';
-                        case '繁體' : return 'zh-CN'
+                        case '繁體' : return 'zh-TW';
+                        case '简体' : return 'zh-CN'
                   }
             }
       }

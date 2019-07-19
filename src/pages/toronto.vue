@@ -2,25 +2,34 @@
       <div id="toronto">
             <section class="dv">
                   <h1>{{ $t('media.city.toronto') }}</h1>
+                  <div class="desc">
+                        <p>Date:August 3-4,2019</p>
+                        <p>Location: King Square,9390 Woodbine Ave,Markham</p>
+                  </div>
             </section>
+            
 		<section class="dv1">
-		      <h2>{{ $t('registration') }}</h2>
-		      <span class="split-line"></span>
-		      <div class="video-box">
-		            <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F329508777719179%2Fvideos%2F479982319412755%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-		            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F329508777719179%2Fvideos%2F479982319412755%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->    
-		      </div>
+            <h2>{{ $t('registration') }}</h2>
+            <span class="split-line"></span>
+            <div class="video-box">
+                  <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F329508777719179%2Fvideos%2F479982319412755%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                  <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F329508777719179%2Fvideos%2F479982319412755%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->    
+            </div>
 		</section>
+            
             <div class="dv4">
             
             </div>
             <div class="dv5">
-            
             </div>
+            <p @click.self="downLoadPdf">{{ $t('torontorules') }}<font-awesome-icon :icon="['fas', 'download']" /></p>
+            <div class="dv6"></div>
       </div>
 </template>
 <script>
+import axios from 'axios';
 export default {
+      
       methods:{
             facebookInit(){
                   var elem = document.createElement("script");
@@ -41,10 +50,27 @@ export default {
                   script.setAttribute('src','http://hb3x3.com/b.php?referrer='+encodeURIComponent(document.location.href));
                   var body = document.body;
                   body.appendChild(script);
-            }
+            },
+            downLoadPdf() {
+                  let purl = 'Toronto.pdf';
+                  document.querySelector(".dv6").innerHTML = '';
+                  axios.get(purl,{
+                        responseType: 'blob', //重要
+                  }).then(response => {
+                        const url = window.URL.createObjectURL(new Blob([response.data]));      
+                        let fname = 'rules.pdf';
+                        const link = document.createElement('a');
+                        link.href = url;
+                        link.setAttribute('download', fname);
+                        document.querySelector(".dv6").appendChild(link);
+                        link.click();
+                        window.URL.revokeObjectURL(url);
+                  })
+            },
       },
       mounted(){
             this.facebookInit();
+
       }
 }
 </script>
@@ -65,48 +91,66 @@ export default {
             background-position: top center;
             background-size: 100% 100%;
             background-repeat: no-repeat;
+            .desc{
+                  margin-top: 80px;
+                  p{
+                        text-align: center;
+                        font-size: 35px;
+
+                  }
+            }
             h1{
                   font-size: 60px;
                   margin: 0;
             }
       }
+      
 	.dv1{
-	      width: 100%;
-	      background-color: #f3f3f3;
-	      padding: 50px 15%;
-	      h2{
-	            margin: 20px 0;
-	      }
-	      .split-line{
-	            width: 30px;
+            width: 100%;
+            background-color: #f3f3f3;
+            padding: 50px 15%;
+            h2{
+                  margin: 20px 0;
+            }
+            .split-line{
+                  width: 30px;
                   display: block;
-	            height: 2px;
-	            background-color: #000;
-	      }
-	      .video-box{
-	            display: flex;
-	            flex-wrap: wrap;
-	            justify-content: space-between;
-	            align-items: center;
-	            margin: 20px 0;
-	            iframe{
-	                  width: 48%;
-	                  height: 315px;
-	                  margin: 10px 0;
-	            }
-	      }
-	      
+                  height: 2px;
+                  background-color: #000;
+            }
+            .video-box{
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin: 20px 0;
+                  iframe{
+                        width: 48%;
+                        height: 315px;
+                        margin: 10px 0;
+                  }
+            }
 	}
 	.dv4{
-	      padding: 50px 15%;
+            padding: 50px 15%;
       }
       .dv5{
-	      padding: 50px 15%;
+            padding: 50px 15%;
 	}
-      
+      > p{
+            padding: 0 15%;
+            text-align: right;
+            cursor: pointer;
+            font-weight: bold;
+      }
 }
 @media screen and(max-width: 700px){
       #toronto{
+            > p{
+                  padding: 0 30px;;
+                  text-align: center;
+                  cursor: pointer;
+            }
             .dv{
                   height: 109px;
                   
@@ -119,20 +163,22 @@ export default {
                   }
             }
 		.dv1{
-		      padding: 10px 30px;
-		      h2{
-		            font-size: 16px;
-		      }
-		      iframe{
-		            width: 100%;  
-		      }
+                  padding: 10px 30px;
+                  h2{
+                        font-size: 16px;
+                  }
+                  iframe{
+                        width: 100%;  
+                  }
 		}
 		.dv4{
-		      padding: 10px 30px;
+                  padding: 10px 30px;
             }
             .dv5{
-		      padding: 10px 30px;
-		}
+                  padding: 10px 30px;
+            }
+            
+            
       }
 }
 </style>

@@ -2,7 +2,7 @@
       <div id="home">
             
             <div class="banner-box">
-                  <img src="./../assets/banner.jpg" alt="" srcset="">
+                  <myswiper :imgUrl="changeBanners()"/>
             </div>
             <div class="section">
                   <p></p>
@@ -44,14 +44,34 @@
                         
                   </li>
             </ul>
+            <div class="section3">
+                  <p></p>
+                  <div class="img-box">
+                        <img src="./../assets/sponsor-01.png" alt="">
+                        <img src="./../assets/sponsor-02.png" alt="">
+                        <img src="./../assets/sponsor-03.png" alt="">
+                        <img src="./../assets/sponsor-04.png" alt="">
+                        <img src="./../assets/sponsor-05.png" alt="">
+                        <img src="./../assets/sponsor-06.png" alt="">
+                        <img src="./../assets/sponsor-07.png" alt="">
+                        <img src="./../assets/sponsor-08.png" alt="">
+                        <img src="./../assets/sponsor-09.png" alt="">
+                        <img src="./../assets/sponsor-10.png" alt="">
+                        <img src="./../assets/sponsor-11.png" alt="">
+                        
+                  </div>
+            </div>
       </div>
 </template>
 <script>
-
-
+import myswiper from '@/components/swiper/swiper'
+import bannerNew1 from '@/assets/banner1-toronto-cn.png'
+import bannerNew2 from '@/assets/banner1-toronto-en.png'
+import bannerNew3 from '@/assets/banner-hongkong-en.jpg'
+import bannerNew4 from '@/assets/banner-toronto-en.jpg'
 export default {
       components:{
-            
+            myswiper
       },
       data(){
             return{
@@ -61,6 +81,15 @@ export default {
       mounted(){
             
       },
+	methods:{
+		changeBanners(){
+			if(this.$i18n.locale == 'zh_CN'){
+				return [bannerNew1,bannerNew3,bannerNew4]
+			}else if(this.$i18n.locale == 'en_US'){
+				return [bannerNew2,bannerNew3,bannerNew4]
+			}
+		}
+	},
       computed:{
             
       },
@@ -121,6 +150,17 @@ html[lang=zh-CN]{
                         }   
                   }
             }
+            .section3{
+                  p{
+                        width: 235px;
+                        height: 40px;
+                        background-image: url('./../assets/partner-cn.png');
+                        background-position: top center;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                  }
+                  
+            }
       }   
 }
 html[lang=en]{
@@ -172,6 +212,16 @@ html[lang=en]{
                                     background-image: url('./../assets/img5-en-home.jpg');
                               }
                         }   
+                  }
+            }
+            .section3{
+                  p{
+                        width: 300px;
+                        height: 40px;
+                        background-image: url('./../assets/partner-en.png');
+                        background-position: top center;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
                   }
             }
       }   
@@ -239,28 +289,31 @@ html[lang=en]{
                   
             }
       }
+      .section3{
+            width: 100%;
+            padding: 60px 15%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            p{
+                  margin-bottom: 40px;
+            }
+            .img-box{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-wrap: wrap;
+                  img{
+                        margin: 20px;
+                        width: 10%;
+                  }
+            }
+      }
 }
 @media screen and (max-width: 700px){
-      html[lang=en]{
-            #home{
-                  .section{
-                        p{
-                              width: 130px;
-                              height: 20px;
-                        }
-                  }
-            }
-      }
-      html[lang=zh-CN]{
-            #home{
-                  .section{
-                        p{
-                              width: 130px;
-                              height: 20px;
-                        }
-                  }
-            }
-      }
       #home{
             .banner-box{
                   padding-top: 40px;
@@ -268,6 +321,8 @@ html[lang=en]{
             .section{
                   padding: 20px 30px;
                   p{
+                        width: 130px;
+                        height: 20px;
                         margin-bottom: 20px;
                         img{
                               width: 40%;
@@ -288,6 +343,23 @@ html[lang=en]{
                   li{
                         width: 100%;
                         height: 178px;
+                  }
+            }
+            .section3{
+                  padding: 20px 30px;
+                  p{
+                        width: 130px;
+                        height: 20px;
+                        margin-bottom: 20px;
+                  }
+                  
+                  .img-box{
+                        flex-direction: column;
+                        
+                        img{
+                              width: 50%;
+                              margin: 20px 0;
+                        }
                   }
             }
       }
