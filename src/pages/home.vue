@@ -7,7 +7,9 @@
             <div class="section">
                   <p></p>
                   <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnba%2Fvideos%2F2712587355443005%2F&show_text=0&width=476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
-                  <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/6jmAnPNtH2U?autoplay=1&enablejsapi=1&loop=1" frameborder="0" allowfullscreen></iframe>
+                  <div class="video-box">
+				<video src="./../assets/video2.mp4" controls="controls" preload="preload"></video>
+			</div>
             </div>
             <div class="section1">
                   <div class="img-box">
@@ -47,6 +49,7 @@
             <div class="section3">
                   <p></p>
                   <div class="img-box">
+                        <h3>{{$t('toronto')}}</h3>
                         <img src="./../assets/sponsor-01.png" alt="">
                         <img src="./../assets/sponsor-02.png" alt="">
                         <img src="./../assets/sponsor-03.png" alt="">
@@ -58,7 +61,24 @@
                         <img src="./../assets/sponsor-09.png" alt="">
                         <img src="./../assets/sponsor-10.png" alt="">
                         <img src="./../assets/sponsor-11.png" alt="">
-                        
+                  </div>
+                  <div class="img-box">
+                        <h3>{{$t('hongkong')}}</h3>
+                        <img src="./../assets/1.png" alt="">
+                        <img src="./../assets/2.png" alt="">
+                        <img src="./../assets/3.png" alt="">
+                        <img src="./../assets/4.png" alt="">
+                        <img src="./../assets/5.png" alt="">
+                        <img src="./../assets/6.png" alt="">
+                        <img src="./../assets/7.png" alt="">
+                        <img src="./../assets/8.png" alt="">
+                        <img src="./../assets/9.png" alt="">
+                        <img src="./../assets/10.png" alt="">
+                        <img src="./../assets/11.png" alt="">
+                        <img src="./../assets/12.png" alt="">
+                        <img src="./../assets/13.png" alt="">
+                        <img src="./../assets/14.png" alt="">
+                        <img src="./../assets/15.png" alt="">
                   </div>
             </div>
       </div>
@@ -67,8 +87,8 @@
 import myswiper from '@/components/swiper/swiper'
 import bannerNew1 from '@/assets/banner1-toronto-cn.png'
 import bannerNew2 from '@/assets/banner1-toronto-en.png'
-import bannerNew3 from '@/assets/banner-hongkong-en.jpg'
-import bannerNew4 from '@/assets/banner-toronto-en.jpg'
+import bannerNew3 from '@/assets/banner-hongkong-en.png'
+import bannerNew4 from '@/assets/banner-toronto-en.png'
 export default {
       components:{
             myswiper
@@ -153,7 +173,7 @@ html[lang=zh-CN]{
             .section3{
                   p{
                         width: 235px;
-                        height: 40px;
+                        height: 30px;
                         background-image: url('./../assets/partner-cn.png');
                         background-position: top center;
                         background-size: 100% 100%;
@@ -252,9 +272,19 @@ html[lang=en]{
             p{
                   margin-bottom: 40px;
             }
-            iframe{
-                  width: 800px;
-                  height: 555px;
+            .video-box{
+                  width: 60%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: flex-start;
+                  align-items: center;
+                  margin: 20px 0;
+                  video{
+                        width: 100%;
+                        margin: 10px 0;
+                        outline: none;
+                  }
+                  
             }
       }
       .section1{
@@ -298,6 +328,9 @@ html[lang=en]{
             justify-content: center;
             align-items: center;
             background-color: #000;
+            h3{
+                  color: #fff;
+            }
             p{
                   margin-bottom: 40px;
             }
@@ -306,6 +339,13 @@ html[lang=en]{
                   align-items: center;
                   justify-content: center;
                   flex-wrap: wrap;
+                  position: relative;
+                  padding-top: 15px;
+                  h3{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                  }
                   img{
                         margin: 20px;
                         width: 10%;
@@ -328,9 +368,8 @@ html[lang=en]{
                               width: 40%;
                         }
                   }
-                  iframe{
+                  .video-box{
                         width: 100%;
-                        height: auto;
                   }
             }
             .section1{
@@ -352,10 +391,8 @@ html[lang=en]{
                         height: 20px;
                         margin-bottom: 20px;
                   }
-                  
                   .img-box{
                         flex-direction: column;
-                        
                         img{
                               width: 50%;
                               margin: 20px 0;

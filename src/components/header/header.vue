@@ -3,6 +3,7 @@
             <div class="header">
                   <div  class="logo">
                         <img src="@/assets/header-logo.png" alt="LOGO">
+                        <img src="@/assets/logo2.png" alt="LOGO">
                   </div>
                   
                   <nav-bar></nav-bar>
@@ -26,7 +27,9 @@ export default {
             window.addEventListener('scroll',this.initHeight);
             this.$nextTick( () => {
                   this.offsetTop = document.querySelector('#header').offsetTop;
+                  
             })
+            
       },
       methods:{
             initHeight () {
@@ -59,13 +62,13 @@ export default {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 0 100px;
             .logo{
-                  width: 122px;
+                  width: 244px;
                   height: 100px;
                   display: flex;
                   align-items: center;
                   justify-content: center;
                   img{
-                        width: 100%;
+                        width: 50%;
                   }
             }
       }
@@ -77,10 +80,10 @@ export default {
                   height: 40px;
                   padding: 0 15px;
                   .logo{
-                        width: 62px;
+                        width: 124px;
                         height: 40px;
                         img{
-                              width: 100%;
+                              width: 50%;
                         }
                   }
             }

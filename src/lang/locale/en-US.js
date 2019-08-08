@@ -85,7 +85,11 @@ export default {
       "Meanwhile, we invited two slam dunkers to perform slam dunks , as well as some slam dunk techniques and guidance for teenagers who are passionate about basketball. After the performance, they also kindly took photos and exchanged basketball experiences with a group of teenagers.",
     p12:
       "Summarize this year's Hoop Battle 3x3 Championship, although the weather was not good, but the fans and players are not affected by the weather, they still supporting and enjoying the game. Thanks everyone for coming to the event ,look forward to see you all next year!",
-    p13: "More Than Basketball"
+    p13: "More Than Basketball",
+    p14:
+      "The event was held in Victoria Park, Hong Kong, covering 6 football fields, including music, creative arts, fashion culture, food, sports and many other creative institutions, government departments and private organizations to set up booths on the spot to introduce various creative achievements."
   },
-  morephotos: "More photos"
+  morephotos: "More photos",
+  toronto: "Toronto",
+  hongkong: "HongKong"
 };

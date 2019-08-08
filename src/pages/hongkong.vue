@@ -18,21 +18,23 @@
 				<dl>
 					<dt>
 						
-						为庆祝国庆70周年及香港回归祖国22周年，由香港各界庆典委员会及香港汇演艺能发展中心举办国际级的大型嘉年华<i>,</i><i>...</i><span>锐意打造一个属于大湾区的专属嘉年华， 6月29日，30日及7月1日连续三天在铜锣湾维多利亚公园足球场举行篮战3x3及创科潮流音乐嘉年华。本次活动在香港维多利亚公园举行，覆盖6个足球场，包括音乐，创科，潮流文化，美食，运动等多家创科机构、政府部门和私人机构在现场摆设摊位，介绍各种创科成果，其中包括特区政府资讯科技总监办公室、香港应用科技研究院、香港生产力促进局和中国移动等。活动由香港各界庆典委员会主办...</span><br>
-						<router-link to="/news">更多...</router-link>
+						{{ $t('new.p1') }}<span>{{ $t('new.p14') }}...</span><br>
+						<router-link to="/news">{{ $t('more') }}...</router-link>
 					</dt>
 					
 				</dl>
 			</div>
 			
             </section>
-			<section class="dv2">
-				<ul>
-					<li v-for="(image, i) in imgUrl" :key="i" @click="index = i"><img class="image" :src="image" ></li>
-				</ul>
-				<p><a href="">{{ $t('morephotos') }} ></a></p>
-				<vue-gallery-slideshow :images="imgUrl" :index="index" @close="index = null"></vue-gallery-slideshow>
-			</section>
+		<section class="dv2">
+			<h2>{{ $t('photo') }}</h2>
+			<span class="split-line"></span>
+			<ul>
+				<li v-for="(image, i) in imgUrl" :key="i" @click="index = i"><img class="image" :src="image" ></li>
+			</ul>
+			<p><a href="https://www.facebook.com/pg/hoopbattle3x3/photos/?tab=album&album_id=350726265597430&__xts__%5B0%5D=68.ARAgPfG6KCibNzHiVVLDRdu5cmH1auV6JJD5UeKCNl9OVM_Fsomi06gRjGxGezt9WkjU5Jvc3-L3EzI5sSoU8guSNY6vZXYKGnXIR7YzwXy_MQROcg1_6cqcxaXWzXFDbTur-1qxPJrdOG4evnts0bvY1RWF9DSxCR5fW9XLxXN8hq3Kq8Ub1_CQaST27sXEH6wrmdJKhgixG04-sfr_RSg7Uxm3DOIdaoXg_PTlmDpQaTtLMGM6CZx88O2Rrn5Fp2-8VpFkRxvSXjGXXMLByP3Fow8ARlxez3uKgssN3Gt_F7xURM3E9A0DdhWylaJS4bNMwWFPWtsF2ine5-qYiMKmnQ2B9pOgh0HBiw3UfmlNDybzfj3dhlujMTfxvBEHjkmo0mRRkUaQPFPXmcVPMNH2tz4Ksz7o7ZcpvTe7g2yBVPj9vi7MrpgcGCeR1QTpn2vU1lE99PfggqxDhg&__tn__=-UC-R">{{ $t('morephotos') }} ></a></p>
+			<vue-gallery-slideshow :images="imgUrl" :index="index" @close="index = null"></vue-gallery-slideshow>
+		</section>
             
       </div>
 </template>
@@ -123,6 +125,7 @@
 			grid-column-gap: 5px;
 			grid-template-columns: 25% 25% 25% 25%;
 			grid-template-rows: 25% 25% 25% 25%;
+			margin-top: 30px;
 			li{
 				img{
 					display: block;
@@ -130,6 +133,15 @@
 					height: 100%;
 				}
 			}
+		}
+		h2{
+                  margin: 20px 0;
+            }
+            .split-line{
+                  width: 30px;
+                  display: block;
+                  height: 2px;
+                  background-color: #000;
 		}
 		
 	}
@@ -153,12 +165,11 @@
 			.video-box{
 				display: flex;
 				flex-wrap: wrap;
-				justify-content: space-between;
+				justify-content: flex-start;
 				align-items: center;
 				margin: 20px 0;
 				video{
 					width: 100%;
-					height: 315px;
 					margin: 10px 0;
 					outline: none;
 				}
@@ -169,11 +180,17 @@
 			width: 48%;
 			dl{
 				width: 100%;
-				height: 315px;
+				
 				margin: 20px 0;
-				padding-top: 10px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				align-items: center;
+				
 				dt{
 					text-indent: 32px;
+					margin: 10px 0;
+					height: 315px;
 					i:nth-child(2){
 						display: inline;
 					}
@@ -222,6 +239,7 @@
 					flex-direction: column;
 					video{
 						width: 100%;
+						height: auto;
 					}
 				}
 			}
@@ -250,6 +268,9 @@
 		.dv2{
 			padding: 10px 30px;
 			margin-bottom:80px;
+			h2{
+                        font-size: 16px;
+			}
 			ul{
 				grid-template-columns: 100%;
 				grid-template-rows: repeat(16, 6.25%);
