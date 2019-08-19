@@ -12,7 +12,7 @@
 					
 				</div>
 			</div>
-                  <div class="right">
+            <div class="right">
 				<h2>{{ $t('news') }}</h2>
 				<span class="split-line"></span>
 				<dl>
@@ -21,10 +21,8 @@
 						{{ $t('new.p1') }}<span>{{ $t('new.p14') }}...</span><br>
 						<router-link to="/news">{{ $t('more') }}...</router-link>
 					</dt>
-					
 				</dl>
 			</div>
-			
             </section>
 		<section class="dv2">
 			<h2>{{ $t('photo') }}</h2>

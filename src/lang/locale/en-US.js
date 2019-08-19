@@ -46,7 +46,7 @@ export default {
   },
   copyright: "Copyright © 2019 Hoop Battle, All RIGHTS Reserved",
   powered: "Powered By Westacks",
-  registration: "Registration",
+  registration: "Result",
   photo: "PHOTOS",
   commingsoon: "Coming Soon",
   video: "VIDEOS",

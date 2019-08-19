@@ -82,7 +82,7 @@ export default {
   },
   copyright: "Copyright © 2019 篮战 版权所有 翻印必究",
   powered: "由Westacks提供技术支持",
-  registration: "报 名",
+  registration: "成 绩",
   photo: "相 册",
   commingsoon: "即将开始",
   video: "视 频",

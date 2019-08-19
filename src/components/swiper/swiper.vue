@@ -4,7 +4,7 @@
                   <div class="swiper-wrapper">
                         <div class="swiper-slide" v-for="(item,index) in imgUrl" :key="index">
                               <img :src="item" alt="banner">
-                              <button v-if="index == 2" class="toronto btn btn-7 btn-7a icon-arrow-right" @click="$router.push({path:'/toronto'})">{{ $t('intro.registernow') }}</button>
+                              <button v-if="index == 2" class="toronto btn btn-7 btn-7a icon-arrow-right" @click="$router.push({path:'/toronto'})">{{ $t('intro.discovermore') }}</button>
                               <button v-if="index == 1" class="hongkong btn btn-7 btn-7a icon-arrow-right" @click="$router.push({path:'/hongkong'})">{{ $t('intro.discovermore') }}</button>
                         </div>
 
@@ -74,7 +74,7 @@ export default {
             outline: none;
       }
       .toronto{
-            bottom: 50px;
+            bottom: 150px;
       }
       .hongkong{
             bottom: 150px;

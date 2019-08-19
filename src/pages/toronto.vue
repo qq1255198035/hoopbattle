@@ -66,7 +66,7 @@ export default {
       
                   var elem1 = document.createElement("script");
                   elem1.src = 'https://play.fiba3x3.com/embed.js';
-                  elem1.setAttribute("data-fiba-embedtype","registration");
+                  elem1.setAttribute("data-fiba-embedtype","results");
                   elem1.setAttribute("data-fiba-eventid","26f9180f-a72f-403e-bce2-617a221ca5f1");
                   elem1.async = true;
                   document.querySelector('.dv5').appendChild(elem1);

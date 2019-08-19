@@ -88,7 +88,7 @@ import myswiper from '@/components/swiper/swiper'
 import bannerNew1 from '@/assets/banner1-toronto-cn.png'
 import bannerNew2 from '@/assets/banner1-toronto-en.png'
 import bannerNew3 from '@/assets/banner-hongkong-en.png'
-import bannerNew4 from '@/assets/banner-toronto-en.png'
+import bannerNew4 from '@/assets/banner-toronto-en.jpg'
 export default {
       components:{
             myswiper
