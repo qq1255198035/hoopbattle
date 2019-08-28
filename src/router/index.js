@@ -62,6 +62,16 @@ export default new Router({
           path: "/news",
           name: "news",
           component: () => import("@/pages/news")
+        },
+        {
+          path: "/news2",
+          name: "news2",
+          component: () => import("@/pages/news2")
+        },
+        {
+          path: "/news3",
+          name: "news3",
+          component: () => import("@/pages/news3")
         }
       ]
     }

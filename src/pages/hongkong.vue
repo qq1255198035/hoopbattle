@@ -17,10 +17,13 @@
 				<span class="split-line"></span>
 				<dl>
 					<dt>
-						
 						{{ $t('new.p1') }}<span>{{ $t('new.p14') }}...</span><br>
 						<router-link to="/news">{{ $t('more') }}...</router-link>
 					</dt>
+					<dd>
+						{{ $t('news3.p1') }}...<br>
+						<router-link to="/news3">{{ $t('more') }}...</router-link>
+					</dd>
 				</dl>
 			</div>
             </section>
@@ -178,17 +181,14 @@
 			width: 48%;
 			dl{
 				width: 100%;
-				
 				margin: 20px 0;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: flex-start;
 				align-items: center;
-				
 				dt{
 					text-indent: 32px;
 					margin: 10px 0;
-					height: 315px;
 					i:nth-child(2){
 						display: inline;
 					}
@@ -205,7 +205,14 @@
 						color: #1d44a0;
 					}
 				}
-				
+				dd{
+					text-indent: 32px;
+					margin: 20px 0 0;
+					a{
+						font-size: 14px;
+						color: #1d44a0;
+					}
+				}
 				
 			}
 		}
@@ -226,42 +233,42 @@
                   }
             }
             .dv1{
-			padding: 10px 30px;
-			flex-direction: column;
-                  h2{
-                        font-size: 16px;
-			}
-			.left{
-				width: 100%;
-				.video-box{
-					flex-direction: column;
-					video{
-						width: 100%;
-						height: auto;
-					}
+				padding: 10px 30px;
+				flex-direction: column;
+                h2{
+                    font-size: 16px;
 				}
-			}
-                  .right{
-				width: 100%;
-				dl{
-					dt{
-						img{
+				.left{
+					width: 100%;
+					.video-box{
+						flex-direction: column;
+						video{
 							width: 100%;
-							margin-right: 0 ;
-							margin-bottom: 20px;
-						}
-						span{
-							display: none;
-						}
-						i:nth-child(3){
-							display: inline;
-						}
-						i:nth-child(2){
-							display: none;
+							height: auto;
 						}
 					}
 				}
-			}
+                .right{
+					width: 100%;
+					dl{
+						dt{
+							img{
+								width: 100%;
+								margin-right: 0 ;
+								margin-bottom: 20px;
+							}
+							span{
+								display: none;
+							}
+							i:nth-child(3){
+								display: inline;
+							}
+							i:nth-child(2){
+								display: none;
+							}
+						}
+					}
+				}
             }
 		.dv2{
 			padding: 10px 30px;

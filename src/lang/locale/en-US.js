@@ -91,5 +91,30 @@ export default {
   },
   morephotos: "More photos",
   toronto: "Toronto",
-  hongkong: "HongKong"
+  hongkong: "HongKong",
+  news2:{
+    title: "2019 Hoop Battle 3x3 - Toronto",
+    p1:"The summer festival event organized by the FCCM, this summer festival held on the weekend of August 3rd to 4th, from 12 noon to 11pm on Saturday, August 3. Sunday, August 4, from 12 noon to 7 pm. The event is located at 9390 Woodbine Ave, Markham, near the King Square outdoor parking lot at the intersection of Woodbine Ave and 16th Ave.",
+    p2:"FCCM Summer Festival, the goal is to prepare for a summer event. In addition to different entertainment facilities, band performances and delicious food stalls, this carnival will have a super sports car show for all car enthusiasts to watch and shoot at close range. In addition, this festival will include a two-day Hoop Battle 3×3 basket battle! The competition is an international competition organized by The Nenking Group and will be held in different cities including Guangzhou, Foshan, Shenzhen, Dongguan, New York, Toronto, Tokyo and Hong Kong.",
+    p3:"Every summer, Markham sees dazzling cultural performances, culinary artists, iconic celebrities, VIPs, sports fans, artisans and food connoisseurs. This year's event will bring two days of uninterrupted multicultural performances to street activities, suitable for family and friends. The Asian tastes organized by Markham, FCCM and APMC are an exciting, high-energy event that has been celebrating culture. The diversity of the past fourteen years, food and culture. Entering our fifteenth anniversary and celebrating Canada's 150th anniversary, we are committed to bringing more cultural diversity to GTA - both delicious and fun!",
+    p4:"The Asian Food Festival also provides a platform for communities to promote Canadian multicultural architecture and create harmony among cultural groups by promoting mutual respect and cooperation. The annual multicultural event is hosted by Markham's British Canadian Federation (FCCM), the Canadian Progressive Muslim Association (APMC) and Markham City. Markham Mayor, Frank Scarpitti, not only endorses the festival, he is also co-chairman of Taste of Asia.",
+    p5:"The group at players competed on the court. The champion team will represent Toronto in the Chinese grand finals and compete for the championship and the prize Among the 32 participants teams, many contestants competed through this battle, which not only increased their personal experience, but also a rare opportunity for them to step in to the competition and add value to themselves. ",
+    p6:"[Toronto the 6] sent a lineup of Jason Qiao, Jason W, Charles, Jrencheng Huang, showing strong strength in the group stage, first with a 20-14 victory [Easy East], followed by After defeating [Warriors] 14-7, [Toronto the 6] was unstoppable to defeated [Squad] 15:11, then defeated [IKON] by 16 : 14 .In the quarter-finals, [Eug-Less] team scored 7-4 , then the score was pulled to 14-10, [Toronto the 6] reached the finals with 18-11 force [Eug-Less].In the final, facing the strong team [IKON], [Toronto the 6 ] Jason Qiao contributed 7 points in this game. After a bloody game,[Toronto the 6 ] won the grand finals with a 16-14 victory.",
+    p7:"Summarize this year's Hoop Battle 3x3 Championship in Toronto, fans and players have not been affected by the weather and are still present to support and enjoy the game. I hope to see everyone next year, thank you for your support!",
+    span1:"「Hoop Battle 3x3」 X「 FCCM Summer Festival」",
+    span3:"Amanda Collucci (L1)  ; Mary Ng -  (L2)   ; Mr. Ken Ng -(L3 ); Billy Pang -  (L4); Alan Ho (R2)  ; Anson Wong - (R1)",
+    span4:"Hoop Battle 3x3 Lead defending champions to victory: [Toronto the 6] vs [IKON] ",
+    span5:" More Than Basketball"
+  },
+  news3:{
+    title: "Hoop Battle 3x3 Championship 2019 – Hong Kong",
+    p1:"Due to the rainy weather failed to complete the finals, carried out smoothly in North Kwai Chung Tang Shiu Kin Sports Arena on 24th Aug, by the [Kangren Waigan] and [Godzilla] compete for the top spot in Hong Kong Stop.  [Kangren Waigan] is last year's champions team at Hong Kong , but [Kangren Waigan] didn’t underestimated opponents, the final 18:12 beat [Godzilla], [Kangren Waigan] will represent Hong Kong to the Hoop Battle 3x3 grand finals in China.",
+    p2:"The Hoop Battle 3x3 Championship finals line-up respectively [Kangren Waigan] team Choi Lung Tak, Chan Yiu Cho , Leung Ka Hin and Lau Hoi To , now they are effectiveness in Hong Kong Fukien Basketball Team. Another team [Godzillia] Sze To Wai Kit, Yeung Man Mon, Yeung Tsz Fung and Lui Ming In are respectively played for Nam Ching, Fukien, HKPA and Eagles. All of them are from Hong Kong A1 Division Basketball League.",
+    p3:"From the group games to the finals, the competition between the two teams is fierce and the playing style is very ornamental",
+    p4:"[Kangren Waigan] Choi Lung Tak scored the first record for the game. Choi Lung Tak and Chen Yiu Cho took the lead for the team to 5:2 and then [Godzilla] Yeung Tsz Fung save the team, and repeatedly got rid [Kangren Waigan]. [Godzilla] staged a scoring battle with [Kangren Waigan]. At the end [Kangren Waigan] Leung Ka Hin shoot a 3 pt ,score to 15:9.",
+    p5:"Finally, [Kangren Waigan] won the Hoop Battle 3x3 Championship Hong Kong Stop with score of 18:12 and get the Hoop Battle 3x3 Championship grand finals qualification.",
+    p6:" It was a wonderful performance and fierce competition to the audience.",
+    span1:"[Kangren Waigan]  (Right To Left ): Leung Ka Hin，Choi Lung Tak，Lau Hoi To，Chan Yiu Cho",
+    span2:"[Godzilla] (Right to left): Sze To Wai Kit，Yeung Tsz Fung，Lui Ming In ，Yeung Man Mon"
+  }
 };

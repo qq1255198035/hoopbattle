@@ -23,13 +23,19 @@
             </div>
             <div class="dv5">
             </div>
+            <div class="dv3">
+                  <h2>{{ $t('news') }}</h2>
+			<span class="split-line"></span>
+                  <h3>{{ $t('news2.title') }}</h3>
+                  <p>{{ $t('news2.p1') }}<router-link to="news2" style="color: blue">{{ $t('more') }}...</router-link></p>
+            </div>
             <section class="dv2">
                   <h2>{{ $t('photo') }}</h2>
 			<span class="split-line"></span>
 			<ul>
 				<li v-for="(image, i) in imgUrl" :key="i" @click="index = i"><img class="image" :src="image" ></li>
 			</ul>
-			
+			<p><a href="https://www.facebook.com/pg/hoopbattle3x3/photos/?tab=album&album_id=369312803738776">{{ $t('morephotos') }} ></a></p>
 			<vue-gallery-slideshow :images="imgUrl" :index="index" @close="index = null"></vue-gallery-slideshow>
 		</section>
             <div class="dv6"></div>
@@ -38,11 +44,7 @@
 <script>
 import axios from 'axios';
 import VueGallerySlideshow from 'vue-gallery-slideshow';
-import img01 from '@/assets/toronto-1.jpg';
-import img02 from '@/assets/toronto-2.jpg';
-import img03 from '@/assets/toronto-3.jpg';
-import img04 from '@/assets/toronto-4.jpg';
-import img05 from '@/assets/toronto-5.jpg';
+
 export default {
       components: {
             VueGallerySlideshow
@@ -50,7 +52,27 @@ export default {
       data(){
             return{
                   imgUrl:[
-                        img01,img02,img03,img04,img05
+                        
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/001.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/002.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/003.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/004.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/005.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/006.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/007.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/008.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/009.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/010.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/011.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/012.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/013.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/014.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/015.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/toronto-1.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/toronto-2.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/toronto-3.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/toronto-4.jpg',
+                        'https://img-1253858660.cos.ap-chengdu.myqcloud.com/toronto-5.jpg'
                   ],
                   index:null
             }
@@ -166,6 +188,15 @@ export default {
             h2{
                   margin: 20px 0;
             }
+            p{
+			text-align: right;
+			margin-top: 30px;
+			a{
+				text-decoration: underline;
+				background-color: #bfbfbf;
+				padding: 5px;
+			}
+		}
             .split-line{
                   width: 30px;
                   display: block;
@@ -177,7 +208,7 @@ export default {
 			grid-row-gap: 5px;
 			grid-column-gap: 5px;
 			grid-template-columns: 25% 25% 25% 25%;
-                  grid-template-rows: 50% 50%;
+                  grid-template-rows: 20% 20% 20% 20% 20%;
                   margin-top: 30px;
 			li{
 				img{
@@ -188,7 +219,19 @@ export default {
 			}
 		}
 		
-	}
+      }
+      .dv3{
+            padding: 50px 15%;
+            h2{
+                  margin: 20px 0;
+            }
+            .split-line{
+                  width: 30px;
+                  display: block;
+                  height: 2px;
+                  background-color: #000;
+            }
+      }
 	.dv4{
             padding: 50px 15%;
       }
@@ -231,14 +274,13 @@ export default {
             }
             .dv2{
 			padding: 10px 30px;
-                  margin-bottom:80px;
+                  padding-bottom:100px;
                   h2{
                         font-size: 16px;
 			}
 			ul{
 				grid-template-columns: 100%;
-				grid-template-rows: repeat(16, 6.25%);
-				
+				grid-template-rows: repeat(20, 5%);
 				li{
 					img{
 						width: 100%;
@@ -247,7 +289,20 @@ export default {
 				}
 			}
 			
-		}
+            }
+            .dv3{
+                  padding: 10px 30px;
+                  
+                  h2{
+                        font-size: 16px;
+                  }
+                  h3{
+                        font-size: 14px;
+                  }
+                  p{
+                        font-size: 12px;
+                  }
+            }
 		.dv4{
                   padding: 10px 30px;
             }
