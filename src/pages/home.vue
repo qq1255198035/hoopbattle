@@ -8,7 +8,7 @@
                   <p></p>
                   <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnba%2Fvideos%2F2712587355443005%2F&show_text=0&width=476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
                   <div class="video-box">
-				<video src="./../assets/video2.mp4" controls="controls" preload="preload"></video>
+				<video src="https://video-1253858660.cos.ap-chengdu.myqcloud.com/video/HOOPBATTLE%20TOKYO%202019%20video.mp4" controls="controls" preload="preload"></video>
 			</div>
             </div>
             <div class="section1">
@@ -85,8 +85,8 @@
 </template>
 <script>
 import myswiper from '@/components/swiper/swiper'
-import bannerNew1 from '@/assets/banner1-toronto-cn.png'
-import bannerNew2 from '@/assets/banner1-toronto-en.png'
+import bannerNew1 from '@/assets/HBTokyoposter.jpg'
+import bannerNew2 from '@/assets/HBTokyoposter.jpg'
 import bannerNew3 from '@/assets/banner-hongkong-en.png'
 import bannerNew4 from '@/assets/banner-toronto-en.jpg'
 export default {

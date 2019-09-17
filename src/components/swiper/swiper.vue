@@ -32,7 +32,7 @@ export default {
     },
       methods:{
             initSwiper(){
-                  new Swiper ('.swiper-container', {
+                  var mySwiper = new Swiper ('.swiper-container', {
                         loop: true,
                         autoplay:true,
                         // pagination: {
@@ -44,6 +44,13 @@ export default {
                         },
                         
                   })        
+                  mySwiper.el.onmouseover = function(){ //鼠标放上暂停轮播
+                        mySwiper.autoplay.stop();
+                  }
+                  mySwiper.el.onmouseleave = function(){
+                        mySwiper.autoplay.start();
+                  }
+
             },
            
       },

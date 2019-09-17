@@ -254,7 +254,13 @@ export default {
             }
             .dv{
                   height: 109px;
-                  
+                  .desc{
+                        margin-bottom: 0;
+                        p{
+                              font-size: 12px;
+
+                        }
+                  }
                   h1{
                         font-size: 14px;
                         margin: 0;
