@@ -40,8 +40,8 @@
                         <p>13．出場資格</p>
                         <ul>
                               <li>(1)2001 年 4 月 1日以降に生まれた者。</li>
-                              <li>(2)FIBA3x3Planet に競技者登録が完了していること。 (登録無料) 　<a href="HOOPBATTLETOKYO2019.xlsx" download style="font-weight: bold">→こちら</a></li>
-                              <li>※FIBA3x3Planet の登録方法につきましては別ファイル参照下さい。 <a href="HOOPBATTLETOKYO2019.xlsx" download style="font-weight: bold">→こちら</a></li>
+                              <li>(2)FIBA3x3Planet に競技者登録が完了していること。 (登録無料) 　<a href="https://play.fiba3x3.com/" style="font-weight: bold">→こちら</a></li>
+                              <li>※FIBA3x3Planet の登録方法につきましては別ファイル参照下さい。 <a href="http://tokyobasketball.jp/wp-content/uploads/2019/08/FIBA3x3Planet_registlation.pdf" download style="font-weight: bold">→こちら</a></li>
                         </ul>
                         <p>14．申込期日 2019 年 9 月 27日(金) </p>
                         <p>15．申込方法 </p>
