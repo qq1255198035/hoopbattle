@@ -10,6 +10,7 @@
             <section class="dv2">
                   <img src="./../assets/1568443825.jpg" alt="">
                   <h2>3x3 Hoop Battle 東京予選大会</h2>
+                  <p style="width: 70%; margin: 0 auto; text-align: right; font-size: 20px;"><a href="HOOPBATTLETOKYO2019.xlsx" download> Registration of Tokyo <font-awesome-icon :icon="['fas', 'download']" /></a></p>
                   <div class="text">
                         <h3>大会要項 </h3>
                         <p>１．大 会 名 3x3 hoop battle 東京予選大会</p>
@@ -39,8 +40,8 @@
                         <p>13．出場資格</p>
                         <ul>
                               <li>(1)2001 年 4 月 1日以降に生まれた者。</li>
-                              <li>(2)FIBA3x3Planet に競技者登録が完了していること。 (登録無料) 　→こちら</li>
-                              <li>※FIBA3x3Planet の登録方法につきましては別ファイル参照下さい。 →こちら</li>
+                              <li>(2)FIBA3x3Planet に競技者登録が完了していること。 (登録無料) 　<a href="HOOPBATTLETOKYO2019.xlsx" download style="font-weight: bold">→こちら</a></li>
+                              <li>※FIBA3x3Planet の登録方法につきましては別ファイル参照下さい。 <a href="HOOPBATTLETOKYO2019.xlsx" download style="font-weight: bold">→こちら</a></li>
                         </ul>
                         <p>14．申込期日 2019 年 9 月 27日(金) </p>
                         <p>15．申込方法 </p>
@@ -135,11 +136,14 @@
                   
                   
             </section>
+            
       </div>
 </template>
 <script>
+
 export default {
-      
+      methods:{
+      }
 }
 </script>
 <style lang="less" scoped>
