@@ -11,11 +11,13 @@
                   <img src="./../assets/1568443825.jpg" alt="">
                   <h2>3x3 Hoop Battle 東京予選大会</h2>
                   <p style="width: 70%; margin: 0 auto; text-align: right; font-size: 20px;"><a href="HOOPBATTLETOKYO2019.xlsx" download> Registration of Tokyo <font-awesome-icon :icon="['fas', 'download']" /></a></p>
+                  
                   <div class="text">
+                        <h3><a href="https://www.makuake.com/start/project/edit/preview/11019/?utm_source=g14&utm_medium=email" target="_blank">観覧席をご購入される方はこちら</a></h3>
                         <h3>大会要項 </h3>
                         <p>１．大 会 名 3x3 hoop battle 東京予選大会</p>
-                        <p>２．主 催  エイベックス株式会社 / 株式会社JBH</p>
-                        <p>３．主 管  エイベックス株式会社 / 株式会社JBH</p>
+                        <p>２．主 催  エイベックス株式会社 / 株式会社JBH(J Basket)</p>
+                        <p>３．主 管  エイベックス株式会社 / 株式会社JBH(J Basket)</p>
                         <p>４．協 力</p>
                         <p>５．後 援 </p>
                         <p>６．期 日 2019年10月19日 （土）20日（日）</p>
@@ -28,6 +30,10 @@
                         <ul>
                               <li>参加日時：2019 年 11 月 2日 3日</li>
                               <li>場所：中国（詳細未定）</li>
+                              <li>賞金</li>
+                              <li>優勝：400,000RMB（約600万円）</li>
+                              <li>準優勝：120,000RMB（約180万円）</li>
+                              <li>3位：80,000RMB（約120万円）</li>
                         </ul>
                         <p>12．ﾁｰﾑ人員 </p>
                         <ul>
@@ -39,11 +45,11 @@
                         <h3>応募要項</h3>
                         <p>13．出場資格</p>
                         <ul>
-                              <li>(1)2001 年 4 月 1日以降に生まれた者。</li>
+                              <li>(1)高校生以上。</li>
                               <li>(2)FIBA3x3Planet に競技者登録が完了していること。 (登録無料) 　<a href="https://play.fiba3x3.com/" style="font-weight: bold">→こちら</a></li>
                               <li>※FIBA3x3Planet の登録方法につきましては別ファイル参照下さい。 <a href="http://tokyobasketball.jp/wp-content/uploads/2019/08/FIBA3x3Planet_registlation.pdf" download style="font-weight: bold">→こちら</a></li>
                         </ul>
-                        <p>14．申込期日 2019 年 9 月 27日(金) </p>
+                        <p>14．申込期日 2019年10月7日(月) </p>
                         <p>15．申込方法 </p>
                         <ul>
                               <li>(1)参加申込書に必要事項を記入。(別途添付ファイルご確認ください)</li>
@@ -58,7 +64,7 @@
                         <p>16. 参 加 費 20,000 円 </p>
                         <ul>
                               <li>＊振込先：実行委員会口座(発表後代表者へご連絡いたします。)</li>
-                              <li>＊期日　：参加チーム発表後〜10月7日(月)着金</li>
+                              <li>期日：エントリー登録完了後１週間以内。主催者よりご連絡いたします。</li>
                         </ul>
                         <p>
                               17．組 合 せ 10 月 上旬 にＨＰに公開予定。
