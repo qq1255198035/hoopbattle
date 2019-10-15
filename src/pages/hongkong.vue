@@ -136,13 +136,13 @@
 			}
 		}
 		h2{
-                  margin: 20px 0;
+            margin: 20px 0;
             }
             .split-line{
-                  width: 30px;
-                  display: block;
-                  height: 2px;
-                  background-color: #000;
+				width: 30px;
+				display: block;
+				height: 2px;
+				background-color: #000;
 		}
 		
 	}

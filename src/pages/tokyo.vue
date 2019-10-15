@@ -218,7 +218,7 @@ export default {
                         margin-bottom: 0;
                         p{
                               font-size: 12px;
-
+                              margin: 0;
                         }
                   }
             }
