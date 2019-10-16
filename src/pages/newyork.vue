@@ -3,7 +3,7 @@
             <section class="dv1">
                   <h1>{{ $t('media.city.newyork') }}</h1>
                   <div class="desc">
-                        <p>Date: October 26, 2019</p>
+                        <p>Date: October 27, 2019</p>
                         <p>Location: The Brooklyn Stuy Dome</p>
                   </div>
             </section>
