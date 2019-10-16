@@ -80,17 +80,17 @@
                         <img src="./../assets/14.png" alt="">
                         <img src="./../assets/15.png" alt="">
                   </div>
-                  <div class="img-box" style="padding-top: 30px;justify-content: flex-start;">
-                        <h3>Japan Supporting companies </h3>
+                  <div class="img-box" style="padding-top: 60px;justify-content: flex-start;">
+                        <h3>Japan <br/>Supporting companies </h3>
                         <img src="./../assets/japan-supporting01.jpg" style="width: 15%;"/>
                         <img src="./../assets/japan-supporting02.jpg" style="width: 15%;"/>
                   </div>
                   <div class="img-box" style="padding-top: 30px;">
                         <h3>Cooperative companies</h3>
                         <img src="./../assets/coop01.jpg" style="width: 15%;"/>
-                        <img src="./../assets/coop02.jpg" style="width: 15%;"/>
-                        <img src="./../assets/coop03.jpg" style="width: 15%;"/>
-                        <img src="./../assets/coop04.jpg" style="width: 15%;"/>
+                        <img src="./../assets/coop02.png" style="width: 15%;"/>
+                        <img src="./../assets/coop04.png" style="width: 15%;"/>
+                        <img src="./../assets/coop03.png" style="width: 15%;"/>
                         <img src="./../assets/coop05.jpg" style="width: 15%;"/>
                   </div>
             </div>
