@@ -4,28 +4,28 @@
                   <h1>{{ $t('media.city.hongkong') }}</h1>
             </section>
             <section class="dv1">
-			<div class="left">
-				<h2>{{ $t('video') }}</h2>
-				<span class="split-line"></span>
-				<div class="video-box">
-					<video src="./../assets/video.mp4" controls="controls" preload="preload"></video>
-					
+				<div class="left">
+					<h2>{{ $t('video') }}</h2>
+					<span class="split-line"></span>
+					<div class="video-box">
+						<video src="./../assets/video.mp4" controls="controls" preload="preload"></video>
+						
+					</div>
 				</div>
-			</div>
-            <div class="right">
-				<h2>{{ $t('news') }}</h2>
-				<span class="split-line"></span>
-				<dl>
-					<dt>
-						{{ $t('new.p1') }}<span>{{ $t('new.p14') }}...</span><br>
-						<router-link to="/news">{{ $t('more') }}...</router-link>
-					</dt>
-					<dd>
-						{{ $t('news3.p1') }}...<br>
-						<router-link to="/news3">{{ $t('more') }}...</router-link>
-					</dd>
-				</dl>
-			</div>
+				<div class="right">
+					<h2>{{ $t('news') }}</h2>
+					<span class="split-line"></span>
+					<dl>
+						<dt>
+							{{ $t('new.p1') }}<span>{{ $t('new.p14') }}...</span><br>
+							<router-link to="/news">{{ $t('more') }}...</router-link>
+						</dt>
+						<dd>
+							{{ $t('news3.p1') }}...<br>
+							<router-link to="/news3">{{ $t('more') }}...</router-link>
+						</dd>
+					</dl>
+				</div>
             </section>
 		<section class="dv2">
 			<h2>{{ $t('photo') }}</h2>
@@ -149,17 +149,17 @@
       .dv1{
 		width: 100%;
 		display: flex;
-            background-color: #f3f3f3;
+        background-color: #f3f3f3;
 		padding: 50px 15%;
 		justify-content: space-between;
             h2{
-                  margin: 20px 0;
+                margin: 20px 0;
             }
             .split-line{
-                  width: 30px;
-                  display: block;
-                  height: 2px;
-                  background-color: #000;
+				width: 30px;
+				display: block;
+				height: 2px;
+				background-color: #000;
 		}
 		.left{
 			width: 48%;

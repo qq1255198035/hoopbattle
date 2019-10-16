@@ -89,8 +89,8 @@
                         <h3>Cooperative companies</h3>
                         <img src="./../assets/coop01.jpg" style="width: 15%;"/>
                         <img src="./../assets/coop02.png" style="width: 15%;"/>
-                        <img src="./../assets/coop04.png" style="width: 15%;"/>
                         <img src="./../assets/coop03.png" style="width: 15%;"/>
+                        <img src="./../assets/coop04.png" style="width: 15%;"/>
                         <img src="./../assets/coop05.jpg" style="width: 15%;"/>
                   </div>
             </div>
